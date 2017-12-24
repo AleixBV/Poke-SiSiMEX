@@ -1,0 +1,15 @@
+186162109 <INFO>    | -------------------------------------------------------------
+186162109 <INFO>    |                     SiSiMEX Multi-Agents                     
+186162109 <INFO>    | -------------------------------------------------------------
+186162109 <INFO>    | 
+186162125 <INFO>    |  - Server Listen socket created
+186162125 <INFO>    |  - Socket Bind to interface 127.0.0.1:8000
+186162125 <INFO>    |  - Socket entered in Listen state...
+186162125 <INFO>    | Spawn MCC for node 1 contributing item 1 - constraint item 2
+186162125 <INFO>    | Spawn MCC for node 2 contributing item 2 - constraint item 3
+186162125 <INFO>    | Spawn MCC for node 3 contributing item 3 - constraint item 0
+186162125 <INFO>    | Spawn MCC for node 0 contributing item 0 - constraint item 9999
+186163265 <ERROR>   | TCPSocket::Connect() failed
+186164265 <ERROR>   | TCPSocket::Connect() failed
+186165265 <ERROR>   | TCPSocket::Connect() failed
+186166265 <ERROR>   | TCPSocket::Connect() failed
