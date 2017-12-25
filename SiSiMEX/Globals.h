@@ -11,14 +11,14 @@
  * one node. This constant defines how many nodes there will
  * exist in a single machine.
  */
-static const int MAX_NODES = 3;
+static const int MAX_NODES = 20;
 
 /**
  * This constant defines which is the maximum number of
  * items of the catalogue. Items will be identified by an
  * index between 0 and MAX_ITEMS - 1.
  */
-static const int MAX_ITEMS = 5;
+static const int MAX_ITEMS = 151;
 
 /** Hostname (or IP address) of the YellowPages process. */
 static const char *HOSTNAME_YP = "localhost";

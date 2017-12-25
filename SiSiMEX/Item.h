@@ -11,6 +11,7 @@ public:
 	// Constructors and destructor
 	Item();
 	Item(int id);
+	Item(int id, int quantity);
 	~Item();
 
 	// Item identifier
@@ -25,6 +26,7 @@ public:
 
 private:
 	int _id; /**< Item identifier. */
+	int _quantity;
 };
 
 /**

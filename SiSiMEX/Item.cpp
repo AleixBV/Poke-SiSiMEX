@@ -3,11 +3,15 @@
 #include <algorithm>
 
 
-Item::Item() : _id(NULL_ITEM_ID)
+Item::Item() : _id(NULL_ITEM_ID), _quantity(1)
 {
 }
 
-Item::Item(int id) : _id(id)
+Item::Item(int id) : _id(id), _quantity(1)
+{
+}
+
+Item::Item(int id, int quantity) : _id(id), _quantity(quantity)
 {
 }
 
@@ -39,10 +43,20 @@ ItemList::~ItemList()
 void ItemList::randomInitialization()
 {
 	// Create random items
+	int num_items = 120 + rand() % (145 - 120);
+	int repeated = 10 + rand() % (25 - 10);
+
 	for (int i = 0; i < MAX_ITEMS; ++i) {
 		int itemId = rand() % MAX_ITEMS;
-		Item item(itemId);
-		addItem(item);
+		if (i < repeated) {
+			int num_repeated = 1 + rand() % 1;
+			Item item(itemId, num_repeated);
+			addItem(item);
+		}
+		else {
+			Item item(itemId, 1);
+			addItem(item);
+		}
 	}
 
 	// Sort items
