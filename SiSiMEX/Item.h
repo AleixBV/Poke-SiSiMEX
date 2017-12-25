@@ -16,6 +16,7 @@ public:
 
 	// Item identifier
 	int id() const { return _id; }
+	int quantity() const { return _quantity; }
 
 	//// Serialization methods
 	//void Write(OutputMemoryStream &stream);
@@ -23,6 +24,9 @@ public:
 
 	// Comparison operator
 	bool operator<(const Item &item) { return _id < item._id; }
+
+	//subtract quantity
+	void subtract() { _quantity--; }
 
 private:
 	int _id; /**< Item identifier. */

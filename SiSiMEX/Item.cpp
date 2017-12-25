@@ -74,9 +74,13 @@ void ItemList::removeItem(int itemId)
 {
 	for (auto it = _items.begin(); it != _items.end(); ++it)
 	{
-		const Item &item(*it);
+		Item &item(*it);
 		if (item.id() == itemId) {
-			_items.erase(it);
+			if (item.quantity() > 1) {
+				item.subtract();
+			}
+			else
+				_items.erase(it);
 			break;
 		}
 	}
