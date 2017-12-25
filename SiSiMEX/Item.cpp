@@ -46,8 +46,15 @@ void ItemList::randomInitialization()
 	int num_items = 120 + rand() % (145 - 120);
 	int repeated = 10 + rand() % (25 - 10);
 
-	for (int i = 0; i < MAX_ITEMS; ++i) {
+	for (int i = 0; i < num_items; ++i) {
 		int itemId = rand() % MAX_ITEMS;
+		while (true) {
+			if (find(itemId) == nullptr)
+				break;
+			else
+				itemId = rand() % MAX_ITEMS;
+		}
+
 		if (i < repeated) {
 			int num_repeated = 1 + rand() % 1;
 			Item item(itemId, num_repeated);
