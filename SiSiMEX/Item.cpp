@@ -75,7 +75,7 @@ void ItemList::addItem(const Item &item)
 	if (item.id() != NULL_ITEM_ID) {
 		Item* existing_item = find(item.id());
 		if (existing_item != nullptr) {
-			for (int i = 0; i < item.quantity; ++i) {
+			for (int i = 0; i < item.quantity(); ++i) {
 				existing_item->add();
 			}
 		}
