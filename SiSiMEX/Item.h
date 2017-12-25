@@ -25,7 +25,8 @@ public:
 	// Comparison operator
 	bool operator<(const Item &item) { return _id < item._id; }
 
-	//subtract quantity
+	// add / subtract quantity
+	void add() { _quantity++; }
 	void subtract() { _quantity--; }
 
 private:
@@ -64,4 +65,5 @@ public:
 private:
 
 	std::list<Item> _items; /**< A list of items. */
+	Item* find(int id); //find item by id
 };

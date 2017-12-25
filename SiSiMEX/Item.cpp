@@ -66,7 +66,14 @@ void ItemList::randomInitialization()
 void ItemList::addItem(const Item &item)
 {
 	if (item.id() != NULL_ITEM_ID) {
-		_items.push_back(item);
+		Item* existing_item = find(item.id());
+		if (existing_item != nullptr) {
+			for (int i = 0; i < item.quantity; ++i) {
+				existing_item->add();
+			}
+		}
+		else
+			_items.push_back(item);
 	}
 }
 
@@ -119,3 +126,12 @@ ItemList ItemList::getSpareItems() const
 //		item.Read(stream);
 //	}
 //}
+
+Item* ItemList::find(int id)
+{
+	for (auto item : _items) {
+		if (item.id() == id)
+			return &item;
+	}
+	return nullptr;
+}
