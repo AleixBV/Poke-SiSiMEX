@@ -13,6 +13,9 @@
  */
 static const int MAX_NODES = 20;
 
+static const int MAX_CONTRIBUTIONS = 2;
+static const int MAX_PETITIONS = 2;
+
 /**
  * This constant defines which is the maximum number of
  * items of the catalogue. Items will be identified by an

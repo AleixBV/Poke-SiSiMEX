@@ -56,7 +56,7 @@ void ItemList::randomInitialization()
 		}
 
 		if (i < repeated) {
-			int num_repeated = 1 + rand() % 1;
+			int num_repeated = 2 + rand() % 2;
 			Item item(itemId, num_repeated);
 			addItem(item);
 		}
@@ -103,13 +103,9 @@ void ItemList::removeItem(int itemId)
 ItemList ItemList::getSpareItems() const
 {
 	ItemList spareItems;
-	std::set<int> existingItems;
 	for (auto item : _items) {
-		auto itemId = item.id();
-		if (existingItems.find(itemId) != existingItems.end()) {
+		for (int i = 1; i < item.quantity(); i++) {
 			spareItems.addItem(item);
-		} else {
-			existingItems.insert(itemId);
 		}
 	}
 	return spareItems;
@@ -141,4 +137,13 @@ Item* ItemList::find(int id)
 			return &item;
 	}
 	return nullptr;
+}
+
+bool ItemList::is_in_list(int id)
+{
+	for (auto item : _items) {
+		if (item.id() == id)
+			return true;
+	}
+	return false;
 }

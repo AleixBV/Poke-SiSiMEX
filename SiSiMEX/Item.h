@@ -58,6 +58,8 @@ public:
 	// It returns a new list with all the repeated items
 	ItemList getSpareItems() const;
 
+	bool is_in_list(int id); //find item by id
+
 	//// Serialization methods
 	//void Write(OutputMemoryStream &stream);
 	//void Read(InputMemoryStream &stream);

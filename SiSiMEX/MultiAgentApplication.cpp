@@ -60,8 +60,7 @@ bool MultiAgentApplication::initialize()
 	// Add the socket to the manager
 	_networkManager.AddSocket(listenSocket);
 
-//#define RANDOM
-#ifdef RANDOM
+
 	// Initialize nodes
 	for (int i = 0; i < MAX_NODES; ++i)
 	{
@@ -76,12 +75,38 @@ bool MultiAgentApplication::initialize()
 	{
 		// Spawn MCC (MultiCastContributors) one for each spare item
 		NodePtr node = _nodes[i];
+
+		std::list<int> wanted_items;
+		for (int ii = 0; ii < MAX_ITEMS; ++ii) {
+			if (!node->itemList().is_in_list(ii)) {
+				wanted_items.push_back(ii);
+			}
+		}
+
 		ItemList spareItems = node->itemList().getSpareItems();
+		int max_contributions = 0;
 		for (auto item : spareItems.items()) {
-			spawnMCC(i, item.id());
+			if (max_contributions >= MAX_CONTRIBUTIONS)
+				break;
+
+			max_contributions++;
+
+			if (wanted_items.empty()) {
+				spawnMCC(i, item.id());
+			}
+			else {
+				spawnMCC(i, item.id(), wanted_items.front());
+				wanted_items.pop_front();
+			}
+		}
+		for (int i = 0; i < MAX_PETITIONS; ++i) {
+			if (wanted_items.empty())
+				break;
+			spawnMCP(i, wanted_items.front());
+			wanted_items.pop_front();
 		}
 	}
-#else
+/*#else
 	_nodes.push_back(std::make_shared<Node>());
 	_nodes.push_back(std::make_shared<Node>());
 	_nodes.push_back(std::make_shared<Node>());
@@ -96,8 +121,7 @@ bool MultiAgentApplication::initialize()
 	spawnMCC(3, 3, 0); // Node 3 offers 3 but wants 0
 
 	spawnMCC(0, 0); // Node 0 offers 0
-	//spawnMCP(0, 1); // Node 0 wants  1
-#endif
+	//spawnMCP(0, 1); // Node 0 wants  1*/
 
 	return true;
 }
@@ -186,7 +210,9 @@ void MultiAgentApplication::inspectLocalNode(int nodeId)
 		{ std::ostringstream oss;
 		ItemList spareItems = node->itemList().getSpareItems();
 		for (auto item : spareItems.items()) {
-			oss << item.id() << " ";
+			for (int i = 1; i < item.quantity(); ++i) {
+				oss << item.id() << " ";
+			}
 		}
 		iLog << " - Spare Items: " << oss.str().c_str(); }
 	} else {
