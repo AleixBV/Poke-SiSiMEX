@@ -57,9 +57,9 @@ public:
 
 	// It returns a new list with all the repeated items
 	ItemList getSpareItems() const;
-	ItemList getWantedItems();
+	std::list<int> getWantedItems() const;
 
-	bool is_in_list(int id); //find item by id
+	bool is_in_list(int id) const; //find item by id
 
 	//// Serialization methods
 	//void Write(OutputMemoryStream &stream);
