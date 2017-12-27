@@ -1,0 +1,287 @@
+52908750 <INFO>    | -------------------------------------------------------------
+52908750 <INFO>    |                    SiSiMEX: Yellow Pages                     
+52908750 <INFO>    | -------------------------------------------------------------
+52908750 <INFO>    | 
+52908750 <INFO>    |  - Server Listen socket created
+52908750 <INFO>    |  - Socket Bind to interface 127.0.0.1:8000
+52908750 <INFO>    |  - Socket entered in Listen state...
+52912453 <INFO>    | OnPacketReceived: 
+52912453 <INFO>    | PacketType::RegisterMCC
+52912453 <INFO>    |  - MCC Agent ID: 1
+52912453 <INFO>    |  - Contributed Item ID: 0
+52912453 <INFO>    |  - Remote host address: 127.0.0.1:59382
+52912453 <INFO>    | OnPacketReceived: 
+52912453 <INFO>    | PacketType::RegisterMCC
+52912468 <INFO>    |  - MCC Agent ID: 2
+52912468 <INFO>    |  - Contributed Item ID: 2
+52912468 <INFO>    |  - Remote host address: 127.0.0.1:59383
+52912468 <INFO>    | OnPacketReceived: 
+52912468 <INFO>    | PacketType::QueryMCCsForItem
+52912468 <INFO>    | OnPacketReceived: 
+52912468 <INFO>    | PacketType::QueryMCCsForItem
+52912468 <INFO>    | OnPacketReceived: 
+52912468 <INFO>    | PacketType::RegisterMCC
+52912468 <INFO>    |  - MCC Agent ID: 5
+52912468 <INFO>    |  - Contributed Item ID: 0
+52912484 <INFO>    |  - Remote host address: 127.0.0.1:59386
+52912484 <INFO>    | OnPacketReceived: 
+52912484 <INFO>    | PacketType::RegisterMCC
+52912484 <INFO>    |  - MCC Agent ID: 6
+52912484 <INFO>    |  - Contributed Item ID: 25
+52912484 <INFO>    |  - Remote host address: 127.0.0.1:59387
+52912484 <INFO>    | OnPacketReceived: 
+52912484 <INFO>    | PacketType::QueryMCCsForItem
+52912484 <INFO>    | OnPacketReceived: 
+52912484 <INFO>    | PacketType::QueryMCCsForItem
+52912484 <INFO>    | OnPacketReceived: 
+52912484 <INFO>    | PacketType::RegisterMCC
+52912484 <INFO>    |  - MCC Agent ID: 9
+52912484 <INFO>    |  - Contributed Item ID: 11
+52912484 <INFO>    |  - Remote host address: 127.0.0.1:59390
+52912500 <INFO>    | OnPacketReceived: 
+52912500 <INFO>    | PacketType::RegisterMCC
+52912500 <INFO>    |  - MCC Agent ID: 10
+52912500 <INFO>    |  - Contributed Item ID: 21
+52912500 <INFO>    |  - Remote host address: 127.0.0.1:59391
+52912500 <INFO>    | OnPacketReceived: 
+52912500 <INFO>    | PacketType::QueryMCCsForItem
+52912500 <INFO>    | OnPacketReceived: 
+52912500 <INFO>    | PacketType::QueryMCCsForItem
+52912500 <INFO>    | OnPacketReceived: 
+52912500 <INFO>    | PacketType::RegisterMCC
+52912500 <INFO>    |  - MCC Agent ID: 13
+52912500 <INFO>    |  - Contributed Item ID: 15
+52912500 <INFO>    |  - Remote host address: 127.0.0.1:59394
+52912500 <INFO>    | OnPacketReceived: 
+52912500 <INFO>    | PacketType::RegisterMCC
+52912515 <INFO>    |  - MCC Agent ID: 14
+52912515 <INFO>    |  - Contributed Item ID: 35
+52912515 <INFO>    |  - Remote host address: 127.0.0.1:59395
+52912515 <INFO>    | OnPacketReceived: 
+52912515 <INFO>    | PacketType::QueryMCCsForItem
+52912515 <INFO>    | OnPacketReceived: 
+52912515 <INFO>    | PacketType::QueryMCCsForItem
+52912515 <INFO>    | OnPacketReceived: 
+52912515 <INFO>    | PacketType::RegisterMCC
+52912515 <INFO>    |  - MCC Agent ID: 17
+52912515 <INFO>    |  - Contributed Item ID: 3
+52912515 <INFO>    |  - Remote host address: 127.0.0.1:59398
+52912515 <INFO>    | OnPacketReceived: 
+52912515 <INFO>    | PacketType::RegisterMCC
+52912515 <INFO>    |  - MCC Agent ID: 18
+52912515 <INFO>    |  - Contributed Item ID: 25
+52912531 <INFO>    |  - Remote host address: 127.0.0.1:59399
+52912531 <INFO>    | OnPacketReceived: 
+52912531 <INFO>    | PacketType::QueryMCCsForItem
+52912531 <INFO>    | OnPacketReceived: 
+52912531 <INFO>    | PacketType::QueryMCCsForItem
+52912531 <INFO>    | OnPacketReceived: 
+52912531 <INFO>    | PacketType::RegisterMCC
+52912531 <INFO>    |  - MCC Agent ID: 21
+52912531 <INFO>    |  - Contributed Item ID: 3
+52912531 <INFO>    |  - Remote host address: 127.0.0.1:59402
+52912531 <INFO>    | OnPacketReceived: 
+52912531 <INFO>    | PacketType::RegisterMCC
+52912531 <INFO>    |  - MCC Agent ID: 22
+52912531 <INFO>    |  - Contributed Item ID: 5
+52912531 <INFO>    |  - Remote host address: 127.0.0.1:59403
+52912546 <INFO>    | OnPacketReceived: 
+52912546 <INFO>    | PacketType::QueryMCCsForItem
+52912546 <INFO>    | OnPacketReceived: 
+52912546 <INFO>    | PacketType::QueryMCCsForItem
+52912546 <INFO>    | OnPacketReceived: 
+52912546 <INFO>    | PacketType::RegisterMCC
+52912546 <INFO>    |  - MCC Agent ID: 25
+52912546 <INFO>    |  - Contributed Item ID: 13
+52912546 <INFO>    |  - Remote host address: 127.0.0.1:59406
+52912546 <INFO>    | OnPacketReceived: 
+52912546 <INFO>    | PacketType::RegisterMCC
+52912546 <INFO>    |  - MCC Agent ID: 26
+52912546 <INFO>    |  - Contributed Item ID: 45
+52912546 <INFO>    |  - Remote host address: 127.0.0.1:59407
+52912546 <INFO>    | OnPacketReceived: 
+52912546 <INFO>    | PacketType::QueryMCCsForItem
+52912562 <INFO>    | OnPacketReceived: 
+52912562 <INFO>    | PacketType::QueryMCCsForItem
+52912562 <INFO>    | OnPacketReceived: 
+52912562 <INFO>    | PacketType::RegisterMCC
+52912562 <INFO>    |  - MCC Agent ID: 29
+52912562 <INFO>    |  - Contributed Item ID: 1
+52912562 <INFO>    |  - Remote host address: 127.0.0.1:59410
+52912562 <INFO>    | OnPacketReceived: 
+52912562 <INFO>    | PacketType::RegisterMCC
+52912562 <INFO>    |  - MCC Agent ID: 30
+52912562 <INFO>    |  - Contributed Item ID: 15
+52912562 <INFO>    |  - Remote host address: 127.0.0.1:59411
+52912562 <INFO>    | OnPacketReceived: 
+52912562 <INFO>    | PacketType::QueryMCCsForItem
+52912562 <INFO>    | OnPacketReceived: 
+52912562 <INFO>    | PacketType::QueryMCCsForItem
+52912578 <INFO>    | OnPacketReceived: 
+52912578 <INFO>    | PacketType::RegisterMCC
+52912578 <INFO>    |  - MCC Agent ID: 33
+52912578 <INFO>    |  - Contributed Item ID: 1
+52912578 <INFO>    |  - Remote host address: 127.0.0.1:59414
+52912578 <INFO>    | OnPacketReceived: 
+52912578 <INFO>    | PacketType::RegisterMCC
+52912578 <INFO>    |  - MCC Agent ID: 34
+52912578 <INFO>    |  - Contributed Item ID: 3
+52912578 <INFO>    |  - Remote host address: 127.0.0.1:59415
+52912578 <INFO>    | OnPacketReceived: 
+52912578 <INFO>    | PacketType::QueryMCCsForItem
+52912578 <INFO>    | OnPacketReceived: 
+52912578 <INFO>    | PacketType::QueryMCCsForItem
+52912578 <INFO>    | OnPacketReceived: 
+52912578 <INFO>    | PacketType::RegisterMCC
+52912593 <INFO>    |  - MCC Agent ID: 37
+52912593 <INFO>    |  - Contributed Item ID: 5
+52912593 <INFO>    |  - Remote host address: 127.0.0.1:59418
+52912593 <INFO>    | OnPacketReceived: 
+52912593 <INFO>    | PacketType::RegisterMCC
+52912593 <INFO>    |  - MCC Agent ID: 38
+52912593 <INFO>    |  - Contributed Item ID: 12
+52912593 <INFO>    |  - Remote host address: 127.0.0.1:59419
+52912593 <INFO>    | OnPacketReceived: 
+52912593 <INFO>    | PacketType::QueryMCCsForItem
+52912593 <INFO>    | OnPacketReceived: 
+52912593 <INFO>    | PacketType::QueryMCCsForItem
+52912593 <INFO>    | OnPacketReceived: 
+52912593 <INFO>    | PacketType::RegisterMCC
+52912609 <INFO>    |  - MCC Agent ID: 41
+52912609 <INFO>    |  - Contributed Item ID: 14
+52912609 <INFO>    |  - Remote host address: 127.0.0.1:59422
+52912609 <INFO>    | OnPacketReceived: 
+52912609 <INFO>    | PacketType::RegisterMCC
+52912609 <INFO>    |  - MCC Agent ID: 42
+52912609 <INFO>    |  - Contributed Item ID: 27
+52912609 <INFO>    |  - Remote host address: 127.0.0.1:59423
+52912609 <INFO>    | OnPacketReceived: 
+52912609 <INFO>    | PacketType::QueryMCCsForItem
+52912609 <INFO>    | OnPacketReceived: 
+52912609 <INFO>    | PacketType::QueryMCCsForItem
+52912609 <INFO>    | OnPacketReceived: 
+52912609 <INFO>    | PacketType::RegisterMCC
+52912609 <INFO>    |  - MCC Agent ID: 45
+52912625 <INFO>    |  - Contributed Item ID: 0
+52912625 <INFO>    |  - Remote host address: 127.0.0.1:59426
+52912625 <INFO>    | OnPacketReceived: 
+52912625 <INFO>    | PacketType::RegisterMCC
+52912625 <INFO>    |  - MCC Agent ID: 46
+52912625 <INFO>    |  - Contributed Item ID: 1
+52912625 <INFO>    |  - Remote host address: 127.0.0.1:59427
+52912625 <INFO>    | OnPacketReceived: 
+52912625 <INFO>    | PacketType::QueryMCCsForItem
+52912625 <INFO>    | OnPacketReceived: 
+52912625 <INFO>    | PacketType::QueryMCCsForItem
+52912625 <INFO>    | OnPacketReceived: 
+52912625 <INFO>    | PacketType::RegisterMCC
+52912640 <INFO>    |  - MCC Agent ID: 49
+52912640 <INFO>    |  - Contributed Item ID: 36
+52912640 <INFO>    |  - Remote host address: 127.0.0.1:59430
+52912640 <INFO>    | OnPacketReceived: 
+52912640 <INFO>    | PacketType::RegisterMCC
+52912640 <INFO>    |  - MCC Agent ID: 50
+52912640 <INFO>    |  - Contributed Item ID: 41
+52912640 <INFO>    |  - Remote host address: 127.0.0.1:59431
+52912640 <INFO>    | OnPacketReceived: 
+52912640 <INFO>    | PacketType::QueryMCCsForItem
+52912640 <INFO>    | OnPacketReceived: 
+52912640 <INFO>    | PacketType::QueryMCCsForItem
+52912656 <INFO>    | OnPacketReceived: 
+52912656 <INFO>    | PacketType::RegisterMCC
+52912656 <INFO>    |  - MCC Agent ID: 53
+52912656 <INFO>    |  - Contributed Item ID: 3
+52912656 <INFO>    |  - Remote host address: 127.0.0.1:59434
+52912656 <INFO>    | OnPacketReceived: 
+52912656 <INFO>    | PacketType::RegisterMCC
+52912656 <INFO>    |  - MCC Agent ID: 54
+52912656 <INFO>    |  - Contributed Item ID: 7
+52912656 <INFO>    |  - Remote host address: 127.0.0.1:59435
+52912656 <INFO>    | OnPacketReceived: 
+52912656 <INFO>    | PacketType::QueryMCCsForItem
+52912656 <INFO>    | OnPacketReceived: 
+52912656 <INFO>    | PacketType::QueryMCCsForItem
+52912656 <INFO>    | OnPacketReceived: 
+52912671 <INFO>    | PacketType::RegisterMCC
+52912671 <INFO>    |  - MCC Agent ID: 57
+52912671 <INFO>    |  - Contributed Item ID: 0
+52912671 <INFO>    |  - Remote host address: 127.0.0.1:59438
+52912671 <INFO>    | OnPacketReceived: 
+52912671 <INFO>    | PacketType::RegisterMCC
+52912671 <INFO>    |  - MCC Agent ID: 58
+52912671 <INFO>    |  - Contributed Item ID: 12
+52912671 <INFO>    |  - Remote host address: 127.0.0.1:59439
+52912671 <INFO>    | OnPacketReceived: 
+52912671 <INFO>    | PacketType::QueryMCCsForItem
+52912671 <INFO>    | OnPacketReceived: 
+52912671 <INFO>    | PacketType::QueryMCCsForItem
+52912671 <INFO>    | OnPacketReceived: 
+52912671 <INFO>    | PacketType::RegisterMCC
+52912687 <INFO>    |  - MCC Agent ID: 61
+52912687 <INFO>    |  - Contributed Item ID: 1
+52912687 <INFO>    |  - Remote host address: 127.0.0.1:59442
+52912687 <INFO>    | OnPacketReceived: 
+52912687 <INFO>    | PacketType::RegisterMCC
+52912687 <INFO>    |  - MCC Agent ID: 62
+52912687 <INFO>    |  - Contributed Item ID: 8
+52912687 <INFO>    |  - Remote host address: 127.0.0.1:59443
+52912687 <INFO>    | OnPacketReceived: 
+52912687 <INFO>    | PacketType::QueryMCCsForItem
+52912703 <INFO>    | OnPacketReceived: 
+52912703 <INFO>    | PacketType::QueryMCCsForItem
+52912703 <INFO>    | OnPacketReceived: 
+52912703 <INFO>    | PacketType::RegisterMCC
+52912703 <INFO>    |  - MCC Agent ID: 65
+52912703 <INFO>    |  - Contributed Item ID: 18
+52912703 <INFO>    |  - Remote host address: 127.0.0.1:59446
+52912703 <INFO>    | OnPacketReceived: 
+52912703 <INFO>    | PacketType::RegisterMCC
+52912703 <INFO>    |  - MCC Agent ID: 66
+52912703 <INFO>    |  - Contributed Item ID: 26
+52912703 <INFO>    |  - Remote host address: 127.0.0.1:59447
+52912718 <INFO>    | OnPacketReceived: 
+52912718 <INFO>    | PacketType::QueryMCCsForItem
+52912734 <INFO>    | OnPacketReceived: 
+52912734 <INFO>    | PacketType::QueryMCCsForItem
+52912734 <INFO>    | OnPacketReceived: 
+52912734 <INFO>    | PacketType::RegisterMCC
+52912750 <INFO>    |  - MCC Agent ID: 69
+52912750 <INFO>    |  - Contributed Item ID: 7
+52912750 <INFO>    |  - Remote host address: 127.0.0.1:59450
+52912750 <INFO>    | OnPacketReceived: 
+52912750 <INFO>    | PacketType::RegisterMCC
+52912750 <INFO>    |  - MCC Agent ID: 70
+52912750 <INFO>    |  - Contributed Item ID: 8
+52912750 <INFO>    |  - Remote host address: 127.0.0.1:59451
+52912750 <INFO>    | OnPacketReceived: 
+52912750 <INFO>    | PacketType::QueryMCCsForItem
+52912750 <INFO>    | OnPacketReceived: 
+52912750 <INFO>    | PacketType::QueryMCCsForItem
+52912750 <INFO>    | OnPacketReceived: 
+52912750 <INFO>    | PacketType::RegisterMCC
+52912750 <INFO>    |  - MCC Agent ID: 73
+52912765 <INFO>    |  - Contributed Item ID: 16
+52912765 <INFO>    |  - Remote host address: 127.0.0.1:59454
+52912765 <INFO>    | OnPacketReceived: 
+52912765 <INFO>    | PacketType::RegisterMCC
+52912765 <INFO>    |  - MCC Agent ID: 74
+52912765 <INFO>    |  - Contributed Item ID: 20
+52912765 <INFO>    |  - Remote host address: 127.0.0.1:59455
+52912765 <INFO>    | OnPacketReceived: 
+52912765 <INFO>    | PacketType::QueryMCCsForItem
+52912765 <INFO>    | OnPacketReceived: 
+52912765 <INFO>    | PacketType::QueryMCCsForItem
+52912765 <INFO>    | OnPacketReceived: 
+52912765 <INFO>    | PacketType::RegisterMCC
+52912765 <INFO>    |  - MCC Agent ID: 77
+52912765 <INFO>    |  - Contributed Item ID: 6
+52912765 <INFO>    |  - Remote host address: 127.0.0.1:59458
+52912781 <INFO>    | OnPacketReceived: 
+52912781 <INFO>    | PacketType::RegisterMCC
+52912781 <INFO>    |  - MCC Agent ID: 78
+52912781 <INFO>    |  - Contributed Item ID: 20
+52912781 <INFO>    |  - Remote host address: 127.0.0.1:59459
+52912781 <INFO>    | OnPacketReceived: 
+52912781 <INFO>    | PacketType::QueryMCCsForItem
+52912781 <INFO>    | OnPacketReceived: 
+52912781 <INFO>    | PacketType::QueryMCCsForItem

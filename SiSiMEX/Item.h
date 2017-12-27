@@ -57,6 +57,7 @@ public:
 
 	// It returns a new list with all the repeated items
 	ItemList getSpareItems() const;
+	ItemList getWantedItems();
 
 	bool is_in_list(int id); //find item by id
 

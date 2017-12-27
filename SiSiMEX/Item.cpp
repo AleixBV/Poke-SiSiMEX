@@ -111,6 +111,16 @@ ItemList ItemList::getSpareItems() const
 	return spareItems;
 }
 
+ItemList ItemList::getWantedItems()
+{
+	ItemList wantedItems;
+	for (int i = 0; i < MAX_ITEMS; ++i) {
+		//if(std::find(_items.begin(), _items.end(), i) == _items.end())
+			wantedItems.addItem(i);
+	}
+	return wantedItems;
+}
+
 //void ItemList::Write(OutputMemoryStream &stream)
 //{
 //	int16_t itemCount = static_cast<int16_t>(_items.size());

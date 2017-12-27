@@ -76,14 +76,14 @@ bool MultiAgentApplication::initialize()
 		// Spawn MCC (MultiCastContributors) one for each spare item
 		NodePtr node = _nodes[i];
 
-		std::list<int> wanted_items;
+		wanted_items;
 		for (int ii = 0; ii < MAX_ITEMS; ++ii) {
 			if (!node->itemList().is_in_list(ii)) {
 				wanted_items.push_back(ii);
 			}
 		}
 
-		ItemList spareItems = node->itemList().getSpareItems();
+		spareItems = node->itemList().getSpareItems();
 		int max_contributions = 0;
 		for (auto item : spareItems.items()) {
 			if (max_contributions >= MAX_CONTRIBUTIONS)
@@ -215,6 +215,16 @@ void MultiAgentApplication::inspectLocalNode(int nodeId)
 			}
 		}
 		iLog << " - Spare Items: " << oss.str().c_str(); }
+
+		{std::ostringstream oss;
+		ItemList wantedItems = node->itemList().getWantedItems();
+		for (auto item : wantedItems.items()) {
+			for (int i = 1; i < item.quantity(); ++i) {
+				oss << item.id() << " ";
+			}
+		}
+		iLog << " - Wanted Items: " << oss.str().c_str();}
+
 	} else {
 		wLog << "Could not find node with ID " << nodeId;
 	}

@@ -29,6 +29,9 @@ public:
 	void spawnMCP(int nodeId, int itemId);
 	void spawnMCC(int nodeId, int contributedItemId, int constraintItemId = NULL_ITEM_ID);
 
+	std::list<int> wanted_items;
+	ItemList spareItems;
+
 private:
 
 	// TCPNetworkManagerDelegate methods
