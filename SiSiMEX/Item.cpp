@@ -111,12 +111,13 @@ ItemList ItemList::getSpareItems() const
 	return spareItems;
 }
 
-ItemList ItemList::getWantedItems()
+std::list<int> ItemList::getWantedItems() const
 {
-	ItemList wantedItems;
+	std::list<int> wantedItems;
 	for (int i = 0; i < MAX_ITEMS; ++i) {
-		//if(std::find(_items.begin(), _items.end(), i) == _items.end())
-			wantedItems.addItem(i);
+		if (!is_in_list(i)) {
+			wantedItems.push_back(i);
+		}
 	}
 	return wantedItems;
 }
@@ -149,7 +150,7 @@ Item* ItemList::find(int id)
 	return nullptr;
 }
 
-bool ItemList::is_in_list(int id)
+bool ItemList::is_in_list(int id) const
 {
 	for (auto item : _items) {
 		if (item.id() == id)

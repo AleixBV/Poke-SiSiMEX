@@ -73,17 +73,12 @@ bool MultiAgentApplication::initialize()
 	// Create MCP agents for each node
 	for (int i = 0; i < MAX_NODES; ++i)
 	{
-		// Spawn MCC (MultiCastContributors) one for each spare item
+		// Spawn MCC (MultiCastContributors)
 		NodePtr node = _nodes[i];
 
-		wanted_items;
-		for (int ii = 0; ii < MAX_ITEMS; ++ii) {
-			if (!node->itemList().is_in_list(ii)) {
-				wanted_items.push_back(ii);
-			}
-		}
+		std::list<int> wanted_items = node->itemList().getWantedItems();
 
-		spareItems = node->itemList().getSpareItems();
+		ItemList spareItems = node->itemList().getSpareItems();
 		int max_contributions = 0;
 		for (auto item : spareItems.items()) {
 			if (max_contributions >= MAX_CONTRIBUTIONS)
@@ -134,21 +129,34 @@ void MultiAgentApplication::update()
 	// Invoke update on all agents
 	_agentContainer.update();
 
+	//list finished mcc and mcp
+	std::list<int> finishedMCC;
+	std::list<int> finishedMCP;
+
 	// Check the results of agents
 	std::vector<MCC*> mccsAlive;
 	std::vector<MCP*> mcpsAlive;
 	for (auto mcc : _mccs) {
 		if (mcc->negotiationFinished()) {
+			finishedMCC.push_back(mcc->id());
+
 			Node *node = mcc->node();
 			node->itemList().removeItem(mcc->contributedItemId());
+			node->_contributedItems.remove(mcc->contributedItemId());
+			node->_petitionedItems.remove(mcc->constraintItemId());
 			node->itemList().addItem(mcc->constraintItemId());
 			mcc->finalize();
-		} else {
+		}
+		else {
 			mccsAlive.push_back(mcc);
 		}
 	}
 	for (auto mcp : _mcps) {
 		if (mcp->negotiationFinished()) {
+			finishedMCP.push_back(mcp->id());
+
+			mcp->node()->_petitionedItems.remove(mcp->requestedItemId());
+
 			if (mcp->negotiationAgreement()) {
 				Node *node = mcp->node();
 				node->itemList().addItem(mcp->requestedItemId());
@@ -164,6 +172,52 @@ void MultiAgentApplication::update()
 
 	// Remove finished agents
 	_agentContainer.postUpdate();
+
+
+	//Create new MCC and MCP
+	while (!finishedMCC.empty())
+	{		
+		NodePtr node = _nodes[finishedMCC.front()];
+
+		std::list<int> wanted_items = node->itemList().getWantedItems();
+		ItemList spareItems = node->itemList().getSpareItems();
+
+		for (auto item : node->_contributedItems) {
+			spareItems.removeItem(item);
+		}
+		for (auto item : node->_petitionedItems) {
+			if (!wanted_items.empty())
+				wanted_items.remove(item);
+		}
+
+		if (wanted_items.empty()) {
+			spawnMCC(finishedMCC.front(), spareItems.items().front().id());
+		}
+		else {
+			spawnMCC(finishedMCC.front(), spareItems.items().front().id(), wanted_items.front());
+		}
+
+		finishedMCC.pop_front();
+	}
+
+	while (!finishedMCP.empty())
+	{
+		NodePtr node = _nodes[finishedMCP.front()];
+
+		std::list<int> wanted_items = node->itemList().getWantedItems();
+
+		for (auto item : node->_petitionedItems) {
+			if (!wanted_items.empty())
+				wanted_items.remove(item);
+		}
+
+		if (!wanted_items.empty()) {
+			spawnMCP(finishedMCP.front(), wanted_items.front());
+		}
+
+		finishedMCP.pop_front();
+	}
+
 
 	_networkManager.HandleOutgoingPackets();
 }
@@ -217,11 +271,10 @@ void MultiAgentApplication::inspectLocalNode(int nodeId)
 		iLog << " - Spare Items: " << oss.str().c_str(); }
 
 		{std::ostringstream oss;
-		ItemList wantedItems = node->itemList().getWantedItems();
-		for (auto item : wantedItems.items()) {
-			for (int i = 1; i < item.quantity(); ++i) {
-				oss << item.id() << " ";
-			}
+		std::list<int> wantedItems = node->itemList().getWantedItems();
+		while (!wantedItems.empty()) {
+			oss << wantedItems.front() << " ";
+			wantedItems.pop_front();
 		}
 		iLog << " - Wanted Items: " << oss.str().c_str();}
 
@@ -239,6 +292,8 @@ void MultiAgentApplication::spawnMCP(int nodeId, int itemId)
 		_mcps.push_back(mcp);
 		AgentPtr agentPtr(mcp);
 		g_AgentContainer->addAgent(agentPtr);
+
+		node->_petitionedItems.push_back(itemId);
 	} else {
 		wLog << "Could not find node with ID " << nodeId;
 	}
@@ -253,6 +308,9 @@ void MultiAgentApplication::spawnMCC(int nodeId, int contributedItemId, int cons
 		_mccs.push_back(mcc);
 		AgentPtr agentPtr(mcc);
 		g_AgentContainer->addAgent(agentPtr);
+
+		node->_contributedItems.push_back(contributedItemId);
+		node->_petitionedItems.push_back(constraintItemId);
 	} else {
 		wLog << "Could not find node with ID " << nodeId;
 	}

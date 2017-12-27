@@ -17,6 +17,9 @@ public:
 	ItemList &itemList() { return _itemList; }
 	const ItemList &itemList() const { return _itemList; }
 
+	std::list<int> _contributedItems;
+	std::list<int> _petitionedItems;
+
 private:
 
 	ItemList _itemList; /**< All items owned by this node. */
