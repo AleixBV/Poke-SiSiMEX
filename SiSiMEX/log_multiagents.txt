@@ -1,134 +1,137 @@
-52911843 <INFO>    | -------------------------------------------------------------
-52911843 <INFO>    |                     SiSiMEX Multi-Agents                     
-52911843 <INFO>    | -------------------------------------------------------------
-52911843 <INFO>    | 
-52911843 <INFO>    |  - Server Listen socket created
-52911843 <INFO>    |  - Socket Bind to interface 127.0.0.1:8000
-52911843 <INFO>    |  - Socket entered in Listen state...
-52912109 <INFO>    | Spawn MCC for node 0 contributing item 0 - constraint item 27
-52912109 <INFO>    | Spawn MCC for node 0 contributing item 2 - constraint item 37
-52912125 <INFO>    | Spawn MCP for node 0 petitioning item 58
-52912125 <INFO>    | Spawn MCP for node 1 petitioning item 68
-52912125 <INFO>    | Spawn MCC for node 1 contributing item 0 - constraint item 69
-52912125 <INFO>    | Spawn MCC for node 1 contributing item 25 - constraint item 71
-52912125 <INFO>    | Spawn MCP for node 0 petitioning item 81
-52912125 <INFO>    | Spawn MCP for node 1 petitioning item 83
-52912140 <INFO>    | Spawn MCC for node 2 contributing item 11 - constraint item 89
-52912140 <INFO>    | Spawn MCC for node 2 contributing item 21 - constraint item 97
-52912140 <INFO>    | Spawn MCP for node 0 petitioning item 102
-52912140 <INFO>    | Spawn MCP for node 1 petitioning item 117
-52912140 <INFO>    | Spawn MCC for node 3 contributing item 15 - constraint item 118
-52912140 <INFO>    | Spawn MCC for node 3 contributing item 35 - constraint item 132
-52912140 <INFO>    | Spawn MCP for node 0 petitioning item 138
-52912140 <INFO>    | Spawn MCP for node 1 petitioning item 2
-52912156 <INFO>    | Spawn MCC for node 4 contributing item 3 - constraint item 4
-52912156 <INFO>    | Spawn MCC for node 4 contributing item 25 - constraint item 9
-52912156 <INFO>    | Spawn MCP for node 0 petitioning item 12
-52912156 <INFO>    | Spawn MCP for node 1 petitioning item 34
-52912156 <INFO>    | Spawn MCC for node 5 contributing item 3 - constraint item 44
-52912171 <INFO>    | Spawn MCC for node 5 contributing item 5 - constraint item 57
-52912171 <INFO>    | Spawn MCP for node 0 petitioning item 71
-52912171 <INFO>    | Spawn MCP for node 1 petitioning item 79
-52912171 <INFO>    | Spawn MCC for node 6 contributing item 13 - constraint item 85
-52912171 <INFO>    | Spawn MCC for node 6 contributing item 45 - constraint item 87
-52912171 <INFO>    | Spawn MCP for node 0 petitioning item 93
-52912171 <INFO>    | Spawn MCP for node 1 petitioning item 95
-52912187 <INFO>    | Spawn MCC for node 7 contributing item 1 - constraint item 100
-52912187 <INFO>    | Spawn MCC for node 7 contributing item 15 - constraint item 110
-52912187 <INFO>    | Spawn MCP for node 0 petitioning item 117
-52912187 <INFO>    | Spawn MCP for node 1 petitioning item 122
-52912187 <INFO>    | Spawn MCC for node 8 contributing item 1 - constraint item 131
-52912187 <INFO>    | Spawn MCC for node 8 contributing item 3 - constraint item 133
-52912187 <INFO>    | Spawn MCP for node 0 petitioning item 136
-52912187 <INFO>    | Spawn MCP for node 1 petitioning item 141
-52912203 <INFO>    | Spawn MCC for node 9 contributing item 5 - constraint item 147
-52912203 <INFO>    | Spawn MCC for node 9 contributing item 12 - constraint item 150
-52912203 <INFO>    | Spawn MCP for node 0 petitioning item 1
-52912203 <INFO>    | Spawn MCP for node 1 petitioning item 7
-52912203 <INFO>    | Spawn MCC for node 10 contributing item 14 - constraint item 9
-52912203 <INFO>    | Spawn MCC for node 10 contributing item 27 - constraint item 15
-52912203 <INFO>    | Spawn MCP for node 0 petitioning item 20
-52912218 <INFO>    | Spawn MCP for node 1 petitioning item 35
-52912218 <INFO>    | Spawn MCC for node 11 contributing item 0 - constraint item 39
-52912218 <INFO>    | Spawn MCC for node 11 contributing item 1 - constraint item 45
-52912218 <INFO>    | Spawn MCP for node 0 petitioning item 51
-52912218 <INFO>    | Spawn MCP for node 1 petitioning item 55
-52912234 <INFO>    | Spawn MCC for node 12 contributing item 36 - constraint item 67
-52912234 <INFO>    | Spawn MCC for node 12 contributing item 41 - constraint item 70
-52912234 <INFO>    | Spawn MCP for node 0 petitioning item 71
-52912234 <INFO>    | Spawn MCP for node 1 petitioning item 82
-52912234 <INFO>    | Spawn MCC for node 13 contributing item 3 - constraint item 83
-52912250 <INFO>    | Spawn MCC for node 13 contributing item 7 - constraint item 84
-52912250 <INFO>    | Spawn MCP for node 0 petitioning item 87
-52912250 <INFO>    | Spawn MCP for node 1 petitioning item 98
-52912250 <INFO>    | Spawn MCC for node 14 contributing item 0 - constraint item 99
-52912250 <INFO>    | Spawn MCC for node 14 contributing item 12 - constraint item 107
-52912250 <INFO>    | Spawn MCP for node 0 petitioning item 108
-52912250 <INFO>    | Spawn MCP for node 1 petitioning item 115
-52912265 <INFO>    | Spawn MCC for node 15 contributing item 1 - constraint item 122
-52912265 <INFO>    | Spawn MCC for node 15 contributing item 8 - constraint item 131
-52912265 <INFO>    | Spawn MCP for node 0 petitioning item 132
-52912265 <INFO>    | Spawn MCP for node 1 petitioning item 135
-52912265 <INFO>    | Spawn MCC for node 16 contributing item 18 - constraint item 137
-52912265 <INFO>    | Spawn MCC for node 16 contributing item 26 - constraint item 1
-52912265 <INFO>    | Spawn MCP for node 0 petitioning item 6
-52912265 <INFO>    | Spawn MCP for node 1 petitioning item 50
-52912281 <INFO>    | Spawn MCC for node 17 contributing item 7 - constraint item 69
-52912281 <INFO>    | Spawn MCC for node 17 contributing item 8 - constraint item 71
-52912281 <INFO>    | Spawn MCP for node 0 petitioning item 72
-52912281 <INFO>    | Spawn MCP for node 1 petitioning item 73
-52912281 <INFO>    | Spawn MCC for node 18 contributing item 16 - constraint item 75
-52912281 <INFO>    | Spawn MCC for node 18 contributing item 20 - constraint item 85
-52912281 <INFO>    | Spawn MCP for node 0 petitioning item 101
-52912281 <INFO>    | Spawn MCP for node 1 petitioning item 103
-52912296 <INFO>    | Spawn MCC for node 19 contributing item 6 - constraint item 117
-52912296 <INFO>    | Spawn MCC for node 19 contributing item 20 - constraint item 120
-52912296 <INFO>    | Spawn MCP for node 0 petitioning item 133
-52912296 <INFO>    | Spawn MCP for node 1 petitioning item 138
-52912468 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 58
-52912687 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 68
-52912687 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 81
-52912703 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 83
-52912703 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 102
-52912703 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 117
-52912703 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 138
-52912703 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 2
-52912703 <INFO>    |  - MCC: 2 - host: 127.0.0.1:8001
-52912703 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 12
-52912703 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 34
-52912703 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 71
-52912703 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 79
-52912703 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 93
-52912703 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 95
-52912703 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 117
-52912718 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 122
-52912718 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 136
-52912718 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 141
-52912718 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 1
-52912718 <INFO>    |  - MCC: 29 - host: 127.0.0.1:8001
-52912718 <INFO>    |  - MCC: 33 - host: 127.0.0.1:8001
-52912718 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 7
-52912718 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 20
-52912718 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 35
-52912718 <INFO>    |  - MCC: 14 - host: 127.0.0.1:8001
-52912718 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 51
-52912718 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 55
-52912718 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 71
-52912734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 82
-52912734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 87
-52912734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 98
-52912734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 108
-52912734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 115
-52912734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 132
-52912734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 135
-52912734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 6
-52912750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 50
-52912781 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 72
-52912781 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 73
-52912781 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 101
-52912781 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 103
-52912796 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 133
-52912796 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 138
-52926265 <INFO>    | Inpect local node 0
-52926265 <INFO>    |  - Items: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 28 29 30 31 32 33 34 35 36 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 59 60 61 62 63 64 65 66 67 70 72 73 74 75 76 77 78 79 80 82 84 85 86 87 88 90 91 92 93 94 95 96 98 99 100 101 103 104 105 106 107 108 109 110 111 112 113 114 115 116 119 120 121 122 123 124 125 126 127 128 129 130 131 133 134 135 136 137 139 140 141 142 143 144 145 146 147 148 149 150 
-52926265 <INFO>    |  - Spare Items: 0 0 2 2 13 13 20 38 38 56 59 59 64 66 66 108 141 143 
+3949906 <INFO>    | -------------------------------------------------------------
+3949906 <INFO>    |                     SiSiMEX Multi-Agents                     
+3949906 <INFO>    | -------------------------------------------------------------
+3949906 <INFO>    | 
+3949921 <INFO>    |  - Server Listen socket created
+3949921 <INFO>    |  - Socket Bind to interface 127.0.0.1:8000
+3949921 <INFO>    |  - Socket entered in Listen state...
+3950187 <INFO>    | Spawn MCC for node 0 contributing item 0 - constraint item 27
+3950187 <INFO>    | Spawn MCC for node 0 contributing item 2 - constraint item 37
+3950187 <INFO>    | Spawn MCP for node 0 petitioning item 58
+3950203 <INFO>    | Spawn MCP for node 1 petitioning item 68
+3950203 <INFO>    | Spawn MCC for node 1 contributing item 0 - constraint item 2
+3950203 <INFO>    | Spawn MCC for node 1 contributing item 25 - constraint item 4
+3950203 <INFO>    | Spawn MCP for node 0 petitioning item 9
+3950203 <INFO>    | Spawn MCP for node 1 petitioning item 12
+3950203 <INFO>    | Spawn MCC for node 2 contributing item 11 - constraint item 1
+3950218 <INFO>    | Spawn MCC for node 2 contributing item 21 - constraint item 7
+3950218 <INFO>    | Spawn MCP for node 0 petitioning item 9
+3950218 <INFO>    | Spawn MCP for node 1 petitioning item 15
+3950218 <INFO>    | Spawn MCC for node 3 contributing item 15 - constraint item 1
+3950218 <INFO>    | Spawn MCC for node 3 contributing item 35 - constraint item 6
+3950218 <INFO>    | Spawn MCP for node 0 petitioning item 50
+3950218 <INFO>    | Spawn MCP for node 1 petitioning item 69
+3950234 <INFO>    | Spawn MCC for node 4 contributing item 3 - constraint item 1
+3950234 <INFO>    | Spawn MCC for node 4 contributing item 25 - constraint item 4
+3950234 <INFO>    | Spawn MCP for node 0 petitioning item 5
+3950234 <INFO>    | Spawn MCP for node 1 petitioning item 14
+3950234 <INFO>    | Spawn MCC for node 5 contributing item 3 - constraint item 4
+3950250 <INFO>    | Spawn MCC for node 5 contributing item 5 - constraint item 8
+3950250 <INFO>    | Spawn MCP for node 0 petitioning item 20
+3950250 <INFO>    | Spawn MCP for node 1 petitioning item 25
+3950250 <INFO>    | Spawn MCC for node 6 contributing item 13 - constraint item 2
+3950250 <INFO>    | Spawn MCC for node 6 contributing item 45 - constraint item 5
+3950250 <INFO>    | Spawn MCP for node 0 petitioning item 11
+3950250 <INFO>    | Spawn MCP for node 1 petitioning item 14
+3950265 <INFO>    | Spawn MCC for node 7 contributing item 1 - constraint item 5
+3950265 <INFO>    | Spawn MCC for node 7 contributing item 15 - constraint item 28
+3950265 <INFO>    | Spawn MCP for node 0 petitioning item 30
+3950265 <INFO>    | Spawn MCP for node 1 petitioning item 39
+3950265 <INFO>    | Spawn MCC for node 8 contributing item 1 - constraint item 0
+3950265 <INFO>    | Spawn MCC for node 8 contributing item 3 - constraint item 7
+3950265 <INFO>    | Spawn MCP for node 0 petitioning item 21
+3950265 <INFO>    | Spawn MCP for node 1 petitioning item 26
+3950281 <INFO>    | Spawn MCC for node 9 contributing item 5 - constraint item 21
+3950281 <INFO>    | Spawn MCC for node 9 contributing item 12 - constraint item 32
+3950281 <INFO>    | Spawn MCP for node 0 petitioning item 51
+3950281 <INFO>    | Spawn MCP for node 1 petitioning item 55
+3950281 <INFO>    | Spawn MCC for node 10 contributing item 14 - constraint item 20
+3950281 <INFO>    | Spawn MCC for node 10 contributing item 27 - constraint item 24
+3950281 <INFO>    | Spawn MCP for node 0 petitioning item 29
+3950281 <INFO>    | Spawn MCP for node 1 petitioning item 32
+3950296 <INFO>    | Spawn MCC for node 11 contributing item 0 - constraint item 25
+3950296 <INFO>    | Spawn MCC for node 11 contributing item 1 - constraint item 36
+3950296 <INFO>    | Spawn MCP for node 0 petitioning item 58
+3950296 <INFO>    | Spawn MCP for node 1 petitioning item 86
+3950296 <INFO>    | Spawn MCC for node 12 contributing item 36 - constraint item 0
+3950312 <INFO>    | Spawn MCC for node 12 contributing item 41 - constraint item 12
+3950312 <INFO>    | Spawn MCP for node 0 petitioning item 19
+3950312 <INFO>    | Spawn MCP for node 1 petitioning item 30
+3950312 <INFO>    | Spawn MCC for node 13 contributing item 3 - constraint item 18
+3950312 <INFO>    | Spawn MCC for node 13 contributing item 7 - constraint item 25
+3950312 <INFO>    | Spawn MCP for node 0 petitioning item 47
+3950312 <INFO>    | Spawn MCP for node 1 petitioning item 50
+3950328 <INFO>    | Spawn MCC for node 14 contributing item 0 - constraint item 11
+3950328 <INFO>    | Spawn MCC for node 14 contributing item 12 - constraint item 28
+3950328 <INFO>    | Spawn MCP for node 0 petitioning item 42
+3950328 <INFO>    | Spawn MCP for node 1 petitioning item 66
+3950328 <INFO>    | Spawn MCC for node 15 contributing item 1 - constraint item 3
+3950328 <INFO>    | Spawn MCC for node 15 contributing item 8 - constraint item 20
+3950328 <INFO>    | Spawn MCP for node 0 petitioning item 30
+3950328 <INFO>    | Spawn MCP for node 1 petitioning item 33
+3950343 <INFO>    | Spawn MCC for node 16 contributing item 18 - constraint item 3
+3950343 <INFO>    | Spawn MCC for node 16 contributing item 26 - constraint item 23
+3950343 <INFO>    | Spawn MCP for node 0 petitioning item 25
+3950343 <INFO>    | Spawn MCP for node 1 petitioning item 29
+3950343 <INFO>    | Spawn MCC for node 17 contributing item 7 - constraint item 1
+3950343 <INFO>    | Spawn MCC for node 17 contributing item 8 - constraint item 5
+3950343 <INFO>    | Spawn MCP for node 0 petitioning item 11
+3950343 <INFO>    | Spawn MCP for node 1 petitioning item 13
+3950359 <INFO>    | Spawn MCC for node 18 contributing item 16 - constraint item 0
+3950359 <INFO>    | Spawn MCC for node 18 contributing item 20 - constraint item 3
+3950359 <INFO>    | Spawn MCP for node 0 petitioning item 4
+3950359 <INFO>    | Spawn MCP for node 1 petitioning item 12
+3950359 <INFO>    | Spawn MCC for node 19 contributing item 6 - constraint item 1
+3950359 <INFO>    | Spawn MCC for node 19 contributing item 20 - constraint item 15
+3950359 <INFO>    | Spawn MCP for node 0 petitioning item 29
+3950359 <INFO>    | Spawn MCP for node 1 petitioning item 32
+3950546 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 58
+3950546 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 68
+3950562 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 9
+3950562 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 12
+3950562 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 9
+3950562 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 15
+3950734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 50
+3950734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 69
+3950734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 5
+3950734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 14
+3950734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 20
+3950734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 25
+3950734 <INFO>    |  - MCC: 6 - host: 127.0.0.1:8001
+3950750 <INFO>    |  - MCC: 18 - host: 127.0.0.1:8001
+3950750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 11
+3950750 <INFO>    |  - MCC: 9 - host: 127.0.0.1:8001
+3950750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 14
+3950750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
+3950750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 39
+3950750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 21
+3950750 <INFO>    |  - MCC: 10 - host: 127.0.0.1:8001
+3950750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 26
+3950750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 51
+3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 55
+3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
+3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 32
+3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 58
+3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 86
+3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 19
+3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
+3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 47
+3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 50
+3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 42
+3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 66
+3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
+3950781 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 33
+3950781 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 25
+3950781 <INFO>    |  - MCC: 6 - host: 127.0.0.1:8001
+3950781 <INFO>    |  - MCC: 18 - host: 127.0.0.1:8001
+3950781 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
+3950781 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 11
+3950781 <INFO>    |  - MCC: 9 - host: 127.0.0.1:8001
+3950781 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 13
+3950781 <INFO>    |  - MCC: 25 - host: 127.0.0.1:8001
+3950796 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 4
+3950796 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 12
+3950796 <INFO>    |  - MCC: 38 - host: 127.0.0.1:8001
+3950796 <INFO>    |  - MCC: 58 - host: 127.0.0.1:8001
+3950812 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
+3950812 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 32
