@@ -37,7 +37,11 @@ void MCP::update()
 	// TODO: Handle other states
 
 	case ST_REQUESTING_NEGOTIATION:
-		//sendNegotiationRequest(_mccRegisters[_mccRegisterIndex]); //Esto peta wapo
+		if (_mccRegisters.empty()) {
+			setState(ST_FINISHED);
+			break;
+		}
+		sendNegotiationRequest(_mccRegisters[_mccRegisterIndex]);
 		break;
 
 	case ST_NEGOTIATING:

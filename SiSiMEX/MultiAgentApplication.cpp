@@ -65,7 +65,7 @@ bool MultiAgentApplication::initialize()
 	for (int i = 0; i < MAX_NODES; ++i)
 	{
 		// Create and intialize nodes
-		NodePtr node = std::make_shared<Node>();
+		NodePtr node = std::make_shared<Node>(i);
 		node->initialize();
 		_nodes.push_back(node);
 	}
@@ -94,7 +94,7 @@ bool MultiAgentApplication::initialize()
 				wanted_items.pop_front();
 			}
 		}
-		for (int i = 0; i < MAX_PETITIONS; ++i) {
+		for (int ii = 0; ii < MAX_PETITIONS; ++ii) {
 			if (wanted_items.empty())
 				break;
 			spawnMCP(i, wanted_items.front());
@@ -130,15 +130,15 @@ void MultiAgentApplication::update()
 	_agentContainer.update();
 
 	//list finished mcc and mcp
-	std::list<int> finishedMCC;
-	std::list<int> finishedMCP;
+	std::list<int> nodesWithFinishedMCC;
+	std::list<int> nodesWithFinishedMCP;
 
 	// Check the results of agents
 	std::vector<MCC*> mccsAlive;
 	std::vector<MCP*> mcpsAlive;
 	for (auto mcc : _mccs) {
 		if (mcc->negotiationFinished()) {
-			finishedMCC.push_back(mcc->id());
+			nodesWithFinishedMCC.push_back(mcc->node()->getId());
 
 			Node *node = mcc->node();
 			node->itemList().removeItem(mcc->contributedItemId());
@@ -153,7 +153,7 @@ void MultiAgentApplication::update()
 	}
 	for (auto mcp : _mcps) {
 		if (mcp->negotiationFinished()) {
-			finishedMCP.push_back(mcp->id());
+			nodesWithFinishedMCP.push_back(mcp->node()->getId());
 
 			mcp->node()->_petitionedItems.remove(mcp->requestedItemId());
 
@@ -175,9 +175,9 @@ void MultiAgentApplication::update()
 
 
 	//Create new MCC and MCP
-	while (!finishedMCC.empty())
+	while (!nodesWithFinishedMCC.empty())
 	{		
-		NodePtr node = _nodes[finishedMCC.front()];
+		NodePtr node = _nodes[nodesWithFinishedMCC.front()];
 
 		std::list<int> wanted_items = node->itemList().getWantedItems();
 		ItemList spareItems = node->itemList().getSpareItems();
@@ -191,18 +191,18 @@ void MultiAgentApplication::update()
 		}
 
 		if (wanted_items.empty()) {
-			spawnMCC(finishedMCC.front(), spareItems.items().front().id());
+			spawnMCC(nodesWithFinishedMCC.front(), spareItems.items().front().id());
 		}
 		else {
-			spawnMCC(finishedMCC.front(), spareItems.items().front().id(), wanted_items.front());
+			spawnMCC(nodesWithFinishedMCC.front(), spareItems.items().front().id(), wanted_items.front());
 		}
 
-		finishedMCC.pop_front();
+		nodesWithFinishedMCC.pop_front();
 	}
 
-	while (!finishedMCP.empty())
+	while (!nodesWithFinishedMCP.empty())
 	{
-		NodePtr node = _nodes[finishedMCP.front()];
+		NodePtr node = _nodes[nodesWithFinishedMCP.front()];
 
 		std::list<int> wanted_items = node->itemList().getWantedItems();
 
@@ -212,10 +212,10 @@ void MultiAgentApplication::update()
 		}
 
 		if (!wanted_items.empty()) {
-			spawnMCP(finishedMCP.front(), wanted_items.front());
+			spawnMCP(nodesWithFinishedMCP.front(), wanted_items.front());
 		}
 
-		finishedMCP.pop_front();
+		nodesWithFinishedMCP.pop_front();
 	}
 
 

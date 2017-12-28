@@ -7,7 +7,7 @@ class Node
 public:
 
 	// Constructor and destructor
-	Node();
+	Node(int id);
 	~Node();
 
 	// Initialization of its item list
@@ -16,12 +16,13 @@ public:
 	// Getters
 	ItemList &itemList() { return _itemList; }
 	const ItemList &itemList() const { return _itemList; }
+	int getId() const { return _id; }
 
 	std::list<int> _contributedItems;
 	std::list<int> _petitionedItems;
 
 private:
-
+	int _id;
 	ItemList _itemList; /**< All items owned by this node. */
 };
 
