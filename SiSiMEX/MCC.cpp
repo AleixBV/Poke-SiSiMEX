@@ -9,6 +9,7 @@ enum State
 	ST_IDLE,
 
 	// TODO: Add other states ...
+	ST_NEGOTIATING,
 	
 	ST_UNREGISTERING,
 	ST_FINISHED
@@ -40,15 +41,33 @@ void MCC::update()
 		break;
 
 	// TODO: Handle other states
+	case ST_NEGOTIATING:
+		if (_ucc->negotiationFinished())
+		{
+			setState(ST_UNREGISTERING);
+			if (_ucc->negotiationAgreement())
+			{
+				_negotiationAgreement = true;
+				unregisterFromYellowPages();
+			}
+			else
+				_negotiationAgreement = false;
+		}
+		break;
+
+	case ST_UNREGISTERING:
+		break;
 	
 	case ST_FINISHED:
-		finish();
+		break;
 	}
 }
 
 void MCC::finalize()
 {
 	// TODO
+	destroyChildUCC();
+	finish();
 }
 
 
@@ -64,18 +83,39 @@ void MCC::OnPacketReceived(TCPSocketPtr socket, const PacketHeader &packetHeader
 		socket->Disconnect();
 	}
 	//else TODO handle other requests
+	else if (state() == ST_IDLE && packetType == PacketType::RequestMCCNegotiation)
+	{
+		iLog << "MCP with id: " << packetHeader.srcAgentId << " wants to start a negotiation";
+
+		setState(ST_NEGOTIATING);
+		createChildUCC();
+
+		PacketHeader packetHead;
+		packetHead.packetType = PacketType::AwnserMCPNegotiation;
+		packetHead.srcAgentId = id();
+		packetHead.dstAgentId = packetHeader.srcAgentId;
+		PacketAnswerMCPNegotiation packetData;
+		packetData.UCC_ID = _ucc->id();
+
+		OutputMemoryStream stream;
+		packetHead.Write(stream);
+		packetData.Write(stream);
+
+		sendPacketToHost(socket->RemoteAddress().GetIPString(), LISTEN_PORT_AGENTS, stream);
+	}
 }
 
 bool MCC::negotiationFinished() const
 {
 	// TODO
-	return false;
+	bool ret = (state() == ST_FINISHED);
+	return ret;
 }
 
 bool MCC::negotiationAgreement() const
 {
 	// TODO
-	return false;
+	return _negotiationAgreement;
 }
 
 bool MCC::registerIntoYellowPages()
@@ -117,9 +157,13 @@ void MCC::unregisterFromYellowPages()
 void MCC::createChildUCC()
 {
 	// TODO
+	_ucc = std::make_shared<UCC>(node(), _contributedItemId, _constraintItemId);
+	g_AgentContainer->addAgent(_ucc);
 }
 
 void MCC::destroyChildUCC()
 {
 	// TODO
+	if (_ucc)
+		_ucc->finalize();
 }

@@ -5,6 +5,9 @@
 enum State
 {
 	// TODO: Add some states
+	ST_IDLE,
+	ST_CONSTRAINT_REQUEST,
+	ST_FINISHED
 };
 
 UCC::UCC(Node *node, uint16_t contributedItemId, uint16_t constraintItemId) :
@@ -13,7 +16,7 @@ UCC::UCC(Node *node, uint16_t contributedItemId, uint16_t constraintItemId) :
 	_constraintItemId(constraintItemId),
 	_negotiationAgreement(false)
 {
-	//setState(ST_WHATEVER_INITIAL_STATE ...);
+	setState(ST_IDLE);
 }
 
 UCC::~UCC()
@@ -35,14 +38,54 @@ void UCC::OnPacketReceived(TCPSocketPtr socket, const PacketHeader &packetHeader
 	PacketType packetType = packetHeader.packetType;
 
 	// TODO Receive requests and send back responses...
+	if (state() == ST_IDLE && packetType == PacketType::RequestUCCForItem)
+	{
+		PacketRegisterMCC data;
+		data.Read(stream);
+
+		if (data.itemId == _contributedItemId)
+		{
+			if (_constraintItemId != NULL_ITEM_ID)
+			{
+				iLog << "UCC constraint: " << _constraintItemId;
+				setState(ST_CONSTRAINT_REQUEST);
+
+				PacketHeader head;
+				head.srcAgentId = id();
+				head.dstAgentId = packetHeader.srcAgentId;
+				head.packetType = PacketType::RequestUCPForConstraint;
+				PacketRegisterMCC data;
+				data.itemId = _constraintItemId;
+
+				OutputMemoryStream stream;
+				head.Write(stream);
+				data.Write(stream);
+				sendPacketToHost(socket->RemoteAddress().GetIPString(), LISTEN_PORT_AGENTS, stream);
+			}
+			else
+			{
+				iLog << "UCC doesn't have constraint, sending Item to UCP";
+				//sendItem(socket->RemoteAddress().GetIPString(), packetHeader.srcAgentId);
+			}
+		}
+		else
+			iLog << "You shouldn't be here";
+	}
+
+	else if (state() == ST_CONSTRAINT_REQUEST && packetType == PacketType::SendConstraintRequestedUCC)
+	{
+		iLog << "UCC constraint solved: " << _constraintItemId << " Sending Item to agent: " << packetHeader.srcAgentId;
+		sendItem(socket->RemoteAddress().GetIPString(), packetHeader.srcAgentId);
+	}
 }
 
 bool UCC::negotiationFinished() const {
 	// TODO
-	return false;
+	bool ret = (state() == ST_FINISHED);
+	return ret;
 }
 
 bool UCC::negotiationAgreement() const {
 	// TODO
-	return false;
+	return _negotiationAgreement;
 }
