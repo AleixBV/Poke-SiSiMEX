@@ -80,7 +80,7 @@ void UCP::OnPacketReceived(TCPSocketPtr socket, const PacketHeader &packetHeader
 		}
 	}
 
-	else if (state() == ST_WAITING_RESPONSE && packetType == PacketType::SendItemRequestedUCP)
+	if (state() == ST_WAITING_RESPONSE && packetType == PacketType::SendItemRequestedUCP)
 	{
 		iLog << "UCP receiving item requested: " << _requestedItemId;
 

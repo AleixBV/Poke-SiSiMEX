@@ -90,7 +90,7 @@ bool MultiAgentApplication::initialize()
 				spawnMCC(i, item.id());
 			}
 			else {
-				spawnMCC(i, item.id(), wanted_items.front());
+				spawnMCC(i, item.id()/*, wanted_items.front()*/); //With only MCC with constraints an exchange of items is impossible
 				wanted_items.pop_front();
 			}
 		}
@@ -201,7 +201,7 @@ void MultiAgentApplication::update()
 		else {
 			int random = rand() % wanted_items.size();
 			for (int i = 0; i < random; ++i) wanted_items.pop_front();
-			spawnMCC(nodesWithFinishedMCC.front(), spareItems.items().front().id(), wanted_items.front());
+			spawnMCC(nodesWithFinishedMCC.front(), spareItems.items().front().id()/*, wanted_items.front()*/);//With only MCC with constraints an exchange of items is impossible
 		}
 
 		nodesWithFinishedMCC.pop_front();

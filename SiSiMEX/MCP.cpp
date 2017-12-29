@@ -39,15 +39,17 @@ void MCP::update()
 	case ST_NEGOTIATING:
 		if (_ucp->negotiationFinished())
 		{
-			if (_mccRegisterIndex < _mccRegisters.size()) {
-				sendNegotiationRequest(_mccRegisters[_mccRegisterIndex]);
+			if (_ucp->negotiationAgreement()) {
+				_negotiationAgreement = true;
+				setState(ST_FINISHED);
 			}
 			else {
-				setState(ST_FINISHED);
-				if (_ucp->negotiationAgreement())
-					_negotiationAgreement = true;
-				else
-					_negotiationAgreement = false;
+				if (_mccRegisterIndex < _mccRegisters.size()) {
+					sendNegotiationRequest(_mccRegisters[_mccRegisterIndex]);
+				}
+				else {
+					setState(ST_FINISHED);
+				}
 			}
 		}
 		break;
