@@ -65,7 +65,7 @@ void UCC::OnPacketReceived(TCPSocketPtr socket, const PacketHeader &packetHeader
 			else
 			{
 				iLog << "UCC doesn't have constraint, sending Item to UCP";
-				//sendItem(socket->RemoteAddress().GetIPString(), packetHeader.srcAgentId);
+				sendItem(socket->RemoteAddress().GetIPString(), packetHeader.srcAgentId);
 			}
 		}
 		else

@@ -104,8 +104,9 @@ ItemList ItemList::getSpareItems() const
 {
 	ItemList spareItems;
 	for (auto item : _items) {
-		for (int i = 1; i < item.quantity(); i++) {
+		if (item.quantity() > 1) {
 			spareItems.addItem(item);
+			spareItems.removeItem(item.id());
 		}
 	}
 	return spareItems;

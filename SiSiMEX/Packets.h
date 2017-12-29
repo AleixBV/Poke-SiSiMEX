@@ -114,8 +114,7 @@ public:
 // MCP <-> MCC
 
 // TODO: Add message classes
-class PacketRequestMCCForNegotiation
-{};
+using PacketRequestMCCForNegotiation = PacketRegisterMCC;
 
 class PacketAnswerMCPNegotiation
 {
@@ -135,4 +134,7 @@ public:
 
 // TODO: Add message classes
 
-
+using PacketRequestUCCForItem = PacketRegisterMCC;
+using PacketRequestUCPForConstraint = PacketRegisterMCC;
+using PacketSendItemRequestedUCP = PacketRegisterMCC;
+using PacketSendConstraintRequestedUCC = PacketRegisterMCC;

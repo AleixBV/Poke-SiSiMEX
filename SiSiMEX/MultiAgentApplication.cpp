@@ -101,6 +101,10 @@ bool MultiAgentApplication::initialize()
 			wanted_items.pop_front();
 		}
 	}
+
+//	for (int i = 0; i < MAX_ITEMS; ++i)
+//		spawnMCC(0, i);
+
 /*#else
 	_nodes.push_back(std::make_shared<Node>());
 	_nodes.push_back(std::make_shared<Node>());
@@ -143,7 +147,8 @@ void MultiAgentApplication::update()
 			Node *node = mcc->node();
 			node->itemList().removeItem(mcc->contributedItemId());
 			node->_contributedItems.remove(mcc->contributedItemId());
-			node->_petitionedItems.remove(mcc->constraintItemId());
+			if (mcc->constraintItemId() != NULL_ITEM_ID)
+				node->_petitionedItems.remove(mcc->constraintItemId());
 			node->itemList().addItem(mcc->constraintItemId());
 			mcc->finalize();
 		}
@@ -194,6 +199,8 @@ void MultiAgentApplication::update()
 			spawnMCC(nodesWithFinishedMCC.front(), spareItems.items().front().id());
 		}
 		else {
+			int random = rand() % wanted_items.size();
+			for (int i = 0; i < random; ++i) wanted_items.pop_front();
 			spawnMCC(nodesWithFinishedMCC.front(), spareItems.items().front().id(), wanted_items.front());
 		}
 
@@ -212,6 +219,8 @@ void MultiAgentApplication::update()
 		}
 
 		if (!wanted_items.empty()) {
+			int random = rand() % wanted_items.size();
+			for (int i = 0; i < random; ++i) wanted_items.pop_front();
 			spawnMCP(nodesWithFinishedMCP.front(), wanted_items.front());
 		}
 
@@ -264,7 +273,7 @@ void MultiAgentApplication::inspectLocalNode(int nodeId)
 		{ std::ostringstream oss;
 		ItemList spareItems = node->itemList().getSpareItems();
 		for (auto item : spareItems.items()) {
-			for (int i = 1; i < item.quantity(); ++i) {
+			for (int i = 0; i < item.quantity(); ++i) {
 				oss << item.id() << " ";
 			}
 		}
@@ -310,7 +319,8 @@ void MultiAgentApplication::spawnMCC(int nodeId, int contributedItemId, int cons
 		g_AgentContainer->addAgent(agentPtr);
 
 		node->_contributedItems.push_back(contributedItemId);
-		node->_petitionedItems.push_back(constraintItemId);
+		if (constraintItemId != NULL_ITEM_ID)
+			node->_petitionedItems.push_back(constraintItemId);
 	} else {
 		wLog << "Could not find node with ID " << nodeId;
 	}
