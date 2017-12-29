@@ -23,6 +23,11 @@ enum class PacketType
 	RequestMCCNegotiation,
 	// UCP <-> UCC
 	// TODO: Add message types
+	RequestUCCForItem,
+	RequestUCPForConstraint,
+	SendItemRequestedUCP,
+	SendConstraintRequestedUCC,
+
 	Last
 };
 

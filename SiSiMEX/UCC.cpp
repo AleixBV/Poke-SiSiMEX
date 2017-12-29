@@ -79,6 +79,25 @@ void UCC::OnPacketReceived(TCPSocketPtr socket, const PacketHeader &packetHeader
 	}
 }
 
+void UCC::sendItem(const std::string IPHost, const uint16_t dst)
+{
+	setState(ST_FINISHED);
+	_negotiationAgreement = true;
+
+	PacketHeader head;
+	head.srcAgentId = id();
+	head.dstAgentId = dst;
+	head.packetType = PacketType::SendItemRequestedUCP;
+	PacketRegisterMCC data;
+	data.itemId = _contributedItemId;
+
+	OutputMemoryStream stream;
+	head.Write(stream);
+	data.Write(stream);
+	sendPacketToHost(IPHost, LISTEN_PORT_AGENTS, stream);
+	iLog << "Item sent";
+}
+
 bool UCC::negotiationFinished() const {
 	// TODO
 	bool ret = (state() == ST_FINISHED);

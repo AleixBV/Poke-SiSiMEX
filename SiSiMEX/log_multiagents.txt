@@ -1,137 +1,328 @@
-3949906 <INFO>    | -------------------------------------------------------------
-3949906 <INFO>    |                     SiSiMEX Multi-Agents                     
-3949906 <INFO>    | -------------------------------------------------------------
-3949906 <INFO>    | 
-3949921 <INFO>    |  - Server Listen socket created
-3949921 <INFO>    |  - Socket Bind to interface 127.0.0.1:8000
-3949921 <INFO>    |  - Socket entered in Listen state...
-3950187 <INFO>    | Spawn MCC for node 0 contributing item 0 - constraint item 27
-3950187 <INFO>    | Spawn MCC for node 0 contributing item 2 - constraint item 37
-3950187 <INFO>    | Spawn MCP for node 0 petitioning item 58
-3950203 <INFO>    | Spawn MCP for node 1 petitioning item 68
-3950203 <INFO>    | Spawn MCC for node 1 contributing item 0 - constraint item 2
-3950203 <INFO>    | Spawn MCC for node 1 contributing item 25 - constraint item 4
-3950203 <INFO>    | Spawn MCP for node 0 petitioning item 9
-3950203 <INFO>    | Spawn MCP for node 1 petitioning item 12
-3950203 <INFO>    | Spawn MCC for node 2 contributing item 11 - constraint item 1
-3950218 <INFO>    | Spawn MCC for node 2 contributing item 21 - constraint item 7
-3950218 <INFO>    | Spawn MCP for node 0 petitioning item 9
-3950218 <INFO>    | Spawn MCP for node 1 petitioning item 15
-3950218 <INFO>    | Spawn MCC for node 3 contributing item 15 - constraint item 1
-3950218 <INFO>    | Spawn MCC for node 3 contributing item 35 - constraint item 6
-3950218 <INFO>    | Spawn MCP for node 0 petitioning item 50
-3950218 <INFO>    | Spawn MCP for node 1 petitioning item 69
-3950234 <INFO>    | Spawn MCC for node 4 contributing item 3 - constraint item 1
-3950234 <INFO>    | Spawn MCC for node 4 contributing item 25 - constraint item 4
-3950234 <INFO>    | Spawn MCP for node 0 petitioning item 5
-3950234 <INFO>    | Spawn MCP for node 1 petitioning item 14
-3950234 <INFO>    | Spawn MCC for node 5 contributing item 3 - constraint item 4
-3950250 <INFO>    | Spawn MCC for node 5 contributing item 5 - constraint item 8
-3950250 <INFO>    | Spawn MCP for node 0 petitioning item 20
-3950250 <INFO>    | Spawn MCP for node 1 petitioning item 25
-3950250 <INFO>    | Spawn MCC for node 6 contributing item 13 - constraint item 2
-3950250 <INFO>    | Spawn MCC for node 6 contributing item 45 - constraint item 5
-3950250 <INFO>    | Spawn MCP for node 0 petitioning item 11
-3950250 <INFO>    | Spawn MCP for node 1 petitioning item 14
-3950265 <INFO>    | Spawn MCC for node 7 contributing item 1 - constraint item 5
-3950265 <INFO>    | Spawn MCC for node 7 contributing item 15 - constraint item 28
-3950265 <INFO>    | Spawn MCP for node 0 petitioning item 30
-3950265 <INFO>    | Spawn MCP for node 1 petitioning item 39
-3950265 <INFO>    | Spawn MCC for node 8 contributing item 1 - constraint item 0
-3950265 <INFO>    | Spawn MCC for node 8 contributing item 3 - constraint item 7
-3950265 <INFO>    | Spawn MCP for node 0 petitioning item 21
-3950265 <INFO>    | Spawn MCP for node 1 petitioning item 26
-3950281 <INFO>    | Spawn MCC for node 9 contributing item 5 - constraint item 21
-3950281 <INFO>    | Spawn MCC for node 9 contributing item 12 - constraint item 32
-3950281 <INFO>    | Spawn MCP for node 0 petitioning item 51
-3950281 <INFO>    | Spawn MCP for node 1 petitioning item 55
-3950281 <INFO>    | Spawn MCC for node 10 contributing item 14 - constraint item 20
-3950281 <INFO>    | Spawn MCC for node 10 contributing item 27 - constraint item 24
-3950281 <INFO>    | Spawn MCP for node 0 petitioning item 29
-3950281 <INFO>    | Spawn MCP for node 1 petitioning item 32
-3950296 <INFO>    | Spawn MCC for node 11 contributing item 0 - constraint item 25
-3950296 <INFO>    | Spawn MCC for node 11 contributing item 1 - constraint item 36
-3950296 <INFO>    | Spawn MCP for node 0 petitioning item 58
-3950296 <INFO>    | Spawn MCP for node 1 petitioning item 86
-3950296 <INFO>    | Spawn MCC for node 12 contributing item 36 - constraint item 0
-3950312 <INFO>    | Spawn MCC for node 12 contributing item 41 - constraint item 12
-3950312 <INFO>    | Spawn MCP for node 0 petitioning item 19
-3950312 <INFO>    | Spawn MCP for node 1 petitioning item 30
-3950312 <INFO>    | Spawn MCC for node 13 contributing item 3 - constraint item 18
-3950312 <INFO>    | Spawn MCC for node 13 contributing item 7 - constraint item 25
-3950312 <INFO>    | Spawn MCP for node 0 petitioning item 47
-3950312 <INFO>    | Spawn MCP for node 1 petitioning item 50
-3950328 <INFO>    | Spawn MCC for node 14 contributing item 0 - constraint item 11
-3950328 <INFO>    | Spawn MCC for node 14 contributing item 12 - constraint item 28
-3950328 <INFO>    | Spawn MCP for node 0 petitioning item 42
-3950328 <INFO>    | Spawn MCP for node 1 petitioning item 66
-3950328 <INFO>    | Spawn MCC for node 15 contributing item 1 - constraint item 3
-3950328 <INFO>    | Spawn MCC for node 15 contributing item 8 - constraint item 20
-3950328 <INFO>    | Spawn MCP for node 0 petitioning item 30
-3950328 <INFO>    | Spawn MCP for node 1 petitioning item 33
-3950343 <INFO>    | Spawn MCC for node 16 contributing item 18 - constraint item 3
-3950343 <INFO>    | Spawn MCC for node 16 contributing item 26 - constraint item 23
-3950343 <INFO>    | Spawn MCP for node 0 petitioning item 25
-3950343 <INFO>    | Spawn MCP for node 1 petitioning item 29
-3950343 <INFO>    | Spawn MCC for node 17 contributing item 7 - constraint item 1
-3950343 <INFO>    | Spawn MCC for node 17 contributing item 8 - constraint item 5
-3950343 <INFO>    | Spawn MCP for node 0 petitioning item 11
-3950343 <INFO>    | Spawn MCP for node 1 petitioning item 13
-3950359 <INFO>    | Spawn MCC for node 18 contributing item 16 - constraint item 0
-3950359 <INFO>    | Spawn MCC for node 18 contributing item 20 - constraint item 3
-3950359 <INFO>    | Spawn MCP for node 0 petitioning item 4
-3950359 <INFO>    | Spawn MCP for node 1 petitioning item 12
-3950359 <INFO>    | Spawn MCC for node 19 contributing item 6 - constraint item 1
-3950359 <INFO>    | Spawn MCC for node 19 contributing item 20 - constraint item 15
-3950359 <INFO>    | Spawn MCP for node 0 petitioning item 29
-3950359 <INFO>    | Spawn MCP for node 1 petitioning item 32
-3950546 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 58
-3950546 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 68
-3950562 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 9
-3950562 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 12
-3950562 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 9
-3950562 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 15
-3950734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 50
-3950734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 69
-3950734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 5
-3950734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 14
-3950734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 20
-3950734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 25
-3950734 <INFO>    |  - MCC: 6 - host: 127.0.0.1:8001
-3950750 <INFO>    |  - MCC: 18 - host: 127.0.0.1:8001
-3950750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 11
-3950750 <INFO>    |  - MCC: 9 - host: 127.0.0.1:8001
-3950750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 14
-3950750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
-3950750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 39
-3950750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 21
-3950750 <INFO>    |  - MCC: 10 - host: 127.0.0.1:8001
-3950750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 26
-3950750 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 51
-3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 55
-3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
-3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 32
-3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 58
-3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 86
-3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 19
-3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
-3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 47
-3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 50
-3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 42
-3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 66
-3950765 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
-3950781 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 33
-3950781 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 25
-3950781 <INFO>    |  - MCC: 6 - host: 127.0.0.1:8001
-3950781 <INFO>    |  - MCC: 18 - host: 127.0.0.1:8001
-3950781 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
-3950781 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 11
-3950781 <INFO>    |  - MCC: 9 - host: 127.0.0.1:8001
-3950781 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 13
-3950781 <INFO>    |  - MCC: 25 - host: 127.0.0.1:8001
-3950796 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 4
-3950796 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 12
-3950796 <INFO>    |  - MCC: 38 - host: 127.0.0.1:8001
-3950796 <INFO>    |  - MCC: 58 - host: 127.0.0.1:8001
-3950812 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
-3950812 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 32
+96362296 <INFO>    | -------------------------------------------------------------
+96362312 <INFO>    |                     SiSiMEX Multi-Agents                     
+96362312 <INFO>    | -------------------------------------------------------------
+96362312 <INFO>    | 
+96362312 <INFO>    |  - Server Listen socket created
+96362312 <INFO>    |  - Socket Bind to interface 127.0.0.1:8000
+96362312 <INFO>    |  - Socket entered in Listen state...
+96362593 <INFO>    | Spawn MCC for node 0 contributing item 0 - constraint item 27
+96362593 <INFO>    | Spawn MCC for node 0 contributing item 2 - constraint item 37
+96362593 <INFO>    | Spawn MCP for node 0 petitioning item 58
+96362609 <INFO>    | Spawn MCP for node 0 petitioning item 68
+96362609 <INFO>    | Spawn MCC for node 1 contributing item 0 - constraint item 2
+96362609 <INFO>    | Spawn MCC for node 1 contributing item 25 - constraint item 4
+96362609 <INFO>    | Spawn MCP for node 1 petitioning item 9
+96362609 <INFO>    | Spawn MCP for node 1 petitioning item 12
+96362609 <INFO>    | Spawn MCC for node 2 contributing item 11 - constraint item 1
+96362625 <INFO>    | Spawn MCC for node 2 contributing item 21 - constraint item 7
+96362625 <INFO>    | Spawn MCP for node 2 petitioning item 9
+96362625 <INFO>    | Spawn MCP for node 2 petitioning item 15
+96362625 <INFO>    | Spawn MCC for node 3 contributing item 15 - constraint item 1
+96362625 <INFO>    | Spawn MCC for node 3 contributing item 35 - constraint item 6
+96362625 <INFO>    | Spawn MCP for node 3 petitioning item 50
+96362625 <INFO>    | Spawn MCP for node 3 petitioning item 69
+96362640 <INFO>    | Spawn MCC for node 4 contributing item 3 - constraint item 1
+96362640 <INFO>    | Spawn MCC for node 4 contributing item 25 - constraint item 4
+96362640 <INFO>    | Spawn MCP for node 4 petitioning item 5
+96362640 <INFO>    | Spawn MCP for node 4 petitioning item 14
+96362640 <INFO>    | Spawn MCC for node 5 contributing item 3 - constraint item 4
+96362640 <INFO>    | Spawn MCC for node 5 contributing item 5 - constraint item 8
+96362640 <INFO>    | Spawn MCP for node 5 petitioning item 20
+96362656 <INFO>    | Spawn MCP for node 5 petitioning item 25
+96362656 <INFO>    | Spawn MCC for node 6 contributing item 13 - constraint item 2
+96362656 <INFO>    | Spawn MCC for node 6 contributing item 45 - constraint item 5
+96362656 <INFO>    | Spawn MCP for node 6 petitioning item 11
+96362656 <INFO>    | Spawn MCP for node 6 petitioning item 14
+96362656 <INFO>    | Spawn MCC for node 7 contributing item 1 - constraint item 5
+96362656 <INFO>    | Spawn MCC for node 7 contributing item 15 - constraint item 28
+96362671 <INFO>    | Spawn MCP for node 7 petitioning item 30
+96362671 <INFO>    | Spawn MCP for node 7 petitioning item 39
+96362671 <INFO>    | Spawn MCC for node 8 contributing item 1 - constraint item 0
+96362671 <INFO>    | Spawn MCC for node 8 contributing item 3 - constraint item 7
+96362671 <INFO>    | Spawn MCP for node 8 petitioning item 21
+96362671 <INFO>    | Spawn MCP for node 8 petitioning item 26
+96362671 <INFO>    | Spawn MCC for node 9 contributing item 5 - constraint item 21
+96362687 <INFO>    | Spawn MCC for node 9 contributing item 12 - constraint item 32
+96362687 <INFO>    | Spawn MCP for node 9 petitioning item 51
+96362687 <INFO>    | Spawn MCP for node 9 petitioning item 55
+96362687 <INFO>    | Spawn MCC for node 10 contributing item 14 - constraint item 20
+96362687 <INFO>    | Spawn MCC for node 10 contributing item 27 - constraint item 24
+96362687 <INFO>    | Spawn MCP for node 10 petitioning item 29
+96362687 <INFO>    | Spawn MCP for node 10 petitioning item 32
+96362703 <INFO>    | Spawn MCC for node 11 contributing item 0 - constraint item 25
+96362703 <INFO>    | Spawn MCC for node 11 contributing item 1 - constraint item 36
+96362703 <INFO>    | Spawn MCP for node 11 petitioning item 58
+96362703 <INFO>    | Spawn MCP for node 11 petitioning item 86
+96362703 <INFO>    | Spawn MCC for node 12 contributing item 36 - constraint item 0
+96362703 <INFO>    | Spawn MCC for node 12 contributing item 41 - constraint item 12
+96362703 <INFO>    | Spawn MCP for node 12 petitioning item 19
+96362718 <INFO>    | Spawn MCP for node 12 petitioning item 30
+96362718 <INFO>    | Spawn MCC for node 13 contributing item 3 - constraint item 18
+96362718 <INFO>    | Spawn MCC for node 13 contributing item 7 - constraint item 25
+96362718 <INFO>    | Spawn MCP for node 13 petitioning item 47
+96362718 <INFO>    | Spawn MCP for node 13 petitioning item 50
+96362718 <INFO>    | Spawn MCC for node 14 contributing item 0 - constraint item 11
+96362734 <INFO>    | Spawn MCC for node 14 contributing item 12 - constraint item 28
+96362734 <INFO>    | Spawn MCP for node 14 petitioning item 42
+96362734 <INFO>    | Spawn MCP for node 14 petitioning item 66
+96362734 <INFO>    | Spawn MCC for node 15 contributing item 1 - constraint item 3
+96362734 <INFO>    | Spawn MCC for node 15 contributing item 8 - constraint item 20
+96362734 <INFO>    | Spawn MCP for node 15 petitioning item 30
+96362734 <INFO>    | Spawn MCP for node 15 petitioning item 33
+96362750 <INFO>    | Spawn MCC for node 16 contributing item 18 - constraint item 3
+96362750 <INFO>    | Spawn MCC for node 16 contributing item 26 - constraint item 23
+96362750 <INFO>    | Spawn MCP for node 16 petitioning item 25
+96362750 <INFO>    | Spawn MCP for node 16 petitioning item 29
+96362750 <INFO>    | Spawn MCC for node 17 contributing item 7 - constraint item 1
+96362750 <INFO>    | Spawn MCC for node 17 contributing item 8 - constraint item 5
+96362750 <INFO>    | Spawn MCP for node 17 petitioning item 11
+96362750 <INFO>    | Spawn MCP for node 17 petitioning item 13
+96362765 <INFO>    | Spawn MCC for node 18 contributing item 16 - constraint item 0
+96362765 <INFO>    | Spawn MCC for node 18 contributing item 20 - constraint item 3
+96362765 <INFO>    | Spawn MCP for node 18 petitioning item 4
+96362765 <INFO>    | Spawn MCP for node 18 petitioning item 12
+96362765 <INFO>    | Spawn MCC for node 19 contributing item 6 - constraint item 1
+96362765 <INFO>    | Spawn MCC for node 19 contributing item 20 - constraint item 15
+96362765 <INFO>    | Spawn MCP for node 19 petitioning item 29
+96362781 <INFO>    | Spawn MCP for node 19 petitioning item 32
+96363031 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 58
+96363031 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 68
+96363031 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 9
+96363031 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 12
+96363031 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 9
+96363031 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 15
+96363031 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 50
+96363031 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 69
+96363046 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 5
+96363046 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 14
+96363046 <INFO>    | Spawn MCP for node 0 petitioning item 58
+96363046 <INFO>    | Spawn MCP for node 0 petitioning item 68
+96363062 <INFO>    | Spawn MCP for node 1 petitioning item 9
+96363062 <INFO>    | Spawn MCP for node 1 petitioning item 12
+96363062 <INFO>    | Spawn MCP for node 2 petitioning item 9
+96363078 <INFO>    | Spawn MCP for node 2 petitioning item 15
+96363078 <INFO>    | Spawn MCP for node 3 petitioning item 50
+96363078 <INFO>    | Spawn MCP for node 3 petitioning item 69
+96363093 <INFO>    | Spawn MCP for node 4 petitioning item 5
+96363093 <INFO>    | Spawn MCP for node 4 petitioning item 14
+96363203 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 20
+96363218 <INFO>    | Spawn MCP for node 5 petitioning item 20
+96363218 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 25
+96363218 <INFO>    |  - MCC: 6 - host: 127.0.0.1:8001
+96363218 <INFO>    |  - MCC: 18 - host: 127.0.0.1:8001
+96363218 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 11
+96363218 <INFO>    |  - MCC: 9 - host: 127.0.0.1:8001
+96363218 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 14
+96363218 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
+96363218 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 39
+96363234 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 21
+96363234 <INFO>    |  - MCC: 10 - host: 127.0.0.1:8001
+96363234 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 26
+96363234 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 51
+96363234 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 55
+96363234 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
+96363234 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 32
+96363234 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 58
+96363234 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 86
+96363234 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 19
+96363234 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
+96363234 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 47
+96363250 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 50
+96363250 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 42
+96363250 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 66
+96363250 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
+96363250 <INFO>    | Spawn MCP for node 6 petitioning item 14
+96363265 <INFO>    | Spawn MCP for node 7 petitioning item 30
+96363265 <INFO>    | Spawn MCP for node 7 petitioning item 39
+96363265 <INFO>    | Spawn MCP for node 8 petitioning item 26
+96363281 <INFO>    | Spawn MCP for node 9 petitioning item 51
+96363281 <INFO>    | Spawn MCP for node 9 petitioning item 55
+96363281 <INFO>    | Spawn MCP for node 10 petitioning item 29
+96363296 <INFO>    | Spawn MCP for node 10 petitioning item 32
+96363296 <INFO>    | Spawn MCP for node 11 petitioning item 58
+96363296 <INFO>    | Spawn MCP for node 11 petitioning item 86
+96363312 <INFO>    | Spawn MCP for node 12 petitioning item 19
+96363312 <INFO>    | Spawn MCP for node 12 petitioning item 30
+96363312 <INFO>    | Spawn MCP for node 13 petitioning item 47
+96363328 <INFO>    | Spawn MCP for node 13 petitioning item 50
+96363328 <INFO>    | Spawn MCP for node 14 petitioning item 42
+96363328 <INFO>    | Spawn MCP for node 14 petitioning item 66
+96363343 <INFO>    | Spawn MCP for node 15 petitioning item 30
+96363343 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 33
+96363343 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 25
+96363343 <INFO>    |  - MCC: 6 - host: 127.0.0.1:8001
+96363343 <INFO>    |  - MCC: 18 - host: 127.0.0.1:8001
+96363343 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
+96363343 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 11
+96363359 <INFO>    |  - MCC: 9 - host: 127.0.0.1:8001
+96363359 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 13
+96363359 <INFO>    |  - MCC: 25 - host: 127.0.0.1:8001
+96363359 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 4
+96363359 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 12
+96363359 <INFO>    |  - MCC: 38 - host: 127.0.0.1:8001
+96363359 <INFO>    |  - MCC: 58 - host: 127.0.0.1:8001
+96363359 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
+96363359 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 32
+96363359 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 58
+96363359 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 68
+96363359 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 9
+96363375 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 12
+96363375 <INFO>    |  - MCC: 38 - host: 127.0.0.1:8001
+96363375 <INFO>    |  - MCC: 58 - host: 127.0.0.1:8001
+96363375 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 9
+96363375 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 15
+96363375 <INFO>    |  - MCC: 13 - host: 127.0.0.1:8001
+96363375 <INFO>    |  - MCC: 30 - host: 127.0.0.1:8001
+96363390 <INFO>    | Spawn MCP for node 15 petitioning item 33
+96363390 <INFO>    | Spawn MCP for node 16 petitioning item 29
+96363390 <INFO>    | Spawn MCP for node 18 petitioning item 4
+96363406 <INFO>    | Spawn MCP for node 19 petitioning item 29
+96363406 <INFO>    | Spawn MCP for node 19 petitioning item 32
+96363406 <INFO>    | Spawn MCP for node 0 petitioning item 58
+96363421 <INFO>    | Spawn MCP for node 0 petitioning item 68
+96363421 <INFO>    | Spawn MCP for node 1 petitioning item 9
+96363421 <INFO>    | Spawn MCP for node 2 petitioning item 9
+96363437 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 50
+96363437 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 69
+96363437 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 5
+96363437 <INFO>    |  - MCC: 22 - host: 127.0.0.1:8001
+96363437 <INFO>    |  - MCC: 37 - host: 127.0.0.1:8001
+96363437 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 14
+96363437 <INFO>    |  - MCC: 41 - host: 127.0.0.1:8001
+96363437 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 20
+96363437 <INFO>    |  - MCC: 74 - host: 127.0.0.1:8001
+96363437 <INFO>    |  - MCC: 78 - host: 127.0.0.1:8001
+96363437 <INFO>    | MCP with id: 24 wants to start a negotiation
+96363437 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 14
+96363453 <INFO>    |  - MCC: 41 - host: 127.0.0.1:8001
+96363453 <INFO>    | Spawn MCP for node 3 petitioning item 50
+96363468 <INFO>    | Spawn MCP for node 3 petitioning item 69
+96363468 <INFO>    | MCP with id: 27 wants to start a negotiation
+96364468 <ERROR>   | TCPSocket::Connect() failed
+96365484 <ERROR>   | TCPSocket::Connect() failed
+96366484 <ERROR>   | TCPSocket::Connect() failed
+96367484 <ERROR>   | TCPSocket::Connect() failed
+96368484 <ERROR>   | TCPSocket::Connect() failed
+96368500 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
+96368500 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 39
+96368500 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 26
+96368500 <INFO>    |  - MCC: 66 - host: 127.0.0.1:8001
+96368500 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 51
+96368500 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 55
+96368515 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
+96368515 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 32
+96368515 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 58
+96368515 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 86
+96368515 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 19
+96368515 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
+96368515 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 47
+96368515 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 50
+96368515 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 42
+96368515 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 66
+96368515 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
+96368515 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 33
+96368531 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
+96368531 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 4
+96368531 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
+96368531 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 32
+96368531 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 58
+96368531 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 68
+96368531 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 9
+96368531 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 9
+96368531 <INFO>    | MCP with id: 35 wants to start a negotiation
+96369531 <ERROR>   | TCPSocket::Connect() failed
+96370546 <ERROR>   | TCPSocket::Connect() failed
+96371546 <ERROR>   | TCPSocket::Connect() failed
+96372546 <ERROR>   | TCPSocket::Connect() failed
+96373546 <ERROR>   | TCPSocket::Connect() failed
+96374546 <ERROR>   | TCPSocket::Connect() failed
+96375562 <ERROR>   | TCPSocket::Connect() failed
+96376562 <ERROR>   | TCPSocket::Connect() failed
+96377562 <ERROR>   | TCPSocket::Connect() failed
+96378562 <ERROR>   | TCPSocket::Connect() failed
+96379578 <ERROR>   | TCPSocket::Connect() failed
+96380578 <ERROR>   | TCPSocket::Connect() failed
+96381578 <ERROR>   | TCPSocket::Connect() failed
+96382578 <ERROR>   | TCPSocket::Connect() failed
+96383578 <ERROR>   | TCPSocket::Connect() failed
+96383593 <INFO>    | Spawn MCP for node 7 petitioning item 30
+96383593 <INFO>    | Spawn MCP for node 7 petitioning item 39
+96383609 <INFO>    | Spawn MCP for node 9 petitioning item 51
+96383625 <INFO>    | Spawn MCP for node 9 petitioning item 55
+96383625 <INFO>    | Spawn MCP for node 10 petitioning item 29
+96383625 <INFO>    | Spawn MCP for node 10 petitioning item 32
+96383640 <INFO>    | Spawn MCP for node 11 petitioning item 58
+96383640 <INFO>    | Spawn MCP for node 11 petitioning item 86
+96383640 <INFO>    | Spawn MCP for node 12 petitioning item 19
+96383656 <INFO>    | Spawn MCP for node 12 petitioning item 30
+96383656 <INFO>    | Spawn MCP for node 13 petitioning item 47
+96383656 <INFO>    | Spawn MCP for node 13 petitioning item 50
+96383656 <INFO>    | Spawn MCP for node 14 petitioning item 42
+96383671 <INFO>    | Spawn MCP for node 14 petitioning item 66
+96383671 <INFO>    | Spawn MCP for node 15 petitioning item 30
+96383671 <INFO>    | Spawn MCP for node 15 petitioning item 33
+96383687 <INFO>    | Spawn MCP for node 16 petitioning item 29
+96383687 <INFO>    | Spawn MCP for node 18 petitioning item 4
+96383687 <INFO>    | Spawn MCP for node 19 petitioning item 29
+96383703 <INFO>    | Spawn MCP for node 19 petitioning item 32
+96383703 <INFO>    | Spawn MCP for node 0 petitioning item 58
+96383703 <INFO>    | Spawn MCP for node 0 petitioning item 68
+96383718 <INFO>    | Spawn MCP for node 1 petitioning item 9
+96383718 <INFO>    | Spawn MCP for node 2 petitioning item 9
+96383734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 50
+96383734 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 69
+96384734 <ERROR>   | TCPSocket::Connect() failed
+96385734 <ERROR>   | TCPSocket::Connect() failed
+96386750 <ERROR>   | TCPSocket::Connect() failed
+96387750 <ERROR>   | TCPSocket::Connect() failed
+96388750 <ERROR>   | TCPSocket::Connect() failed
+96389750 <ERROR>   | TCPSocket::Connect() failed
+96390750 <ERROR>   | TCPSocket::Connect() failed
+96391750 <ERROR>   | TCPSocket::Connect() failed
+96392765 <ERROR>   | TCPSocket::Connect() failed
+96393765 <ERROR>   | TCPSocket::Connect() failed
+96394765 <ERROR>   | TCPSocket::Connect() failed
+96395765 <ERROR>   | TCPSocket::Connect() failed
+96396765 <ERROR>   | TCPSocket::Connect() failed
+96397781 <ERROR>   | TCPSocket::Connect() failed
+96397781 <INFO>    | Spawn MCP for node 3 petitioning item 50
+96397796 <INFO>    | Spawn MCP for node 3 petitioning item 69
+96397796 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
+96398796 <ERROR>   | TCPSocket::Connect() failed
+96399796 <ERROR>   | TCPSocket::Connect() failed
+96400812 <ERROR>   | TCPSocket::Connect() failed
+96401812 <ERROR>   | TCPSocket::Connect() failed
+96402812 <ERROR>   | TCPSocket::Connect() failed
+96403812 <ERROR>   | TCPSocket::Connect() failed
+96404812 <ERROR>   | TCPSocket::Connect() failed
+96405812 <ERROR>   | TCPSocket::Connect() failed
+96406812 <ERROR>   | TCPSocket::Connect() failed
+96407828 <ERROR>   | TCPSocket::Connect() failed
+96408828 <ERROR>   | TCPSocket::Connect() failed
+96409828 <ERROR>   | TCPSocket::Connect() failed
+96410828 <ERROR>   | TCPSocket::Connect() failed
+96411843 <ERROR>   | TCPSocket::Connect() failed
+96411843 <INFO>    | Spawn MCP for node 7 petitioning item 30
+96411859 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 39
+96411859 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 51
+96411859 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 55
+96411859 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
+96411859 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 32
+96411859 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 58
+96411859 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 86
+96411859 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 19
+96411875 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
+96411875 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 47
+96411875 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 50
+96411875 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 42
+96411875 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 66
+96411875 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 30
+96411875 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 33
+96411875 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
+96411875 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 4
+96411875 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 29
+96411875 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 32
+96411875 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 58
+96411875 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 68
+96411890 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 9
+96411890 <INFO>    | OnPacketReceived PacketType::ReturnMCCsForItem 9
