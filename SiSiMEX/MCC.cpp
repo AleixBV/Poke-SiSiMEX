@@ -85,7 +85,7 @@ void MCC::OnPacketReceived(TCPSocketPtr socket, const PacketHeader &packetHeader
 	//else TODO handle other requests
 	else if (state() == ST_IDLE && packetType == PacketType::RequestMCCNegotiation)
 	{
-		iLog << "MCC with id: " << packetHeader.srcAgentId << " wants to start a negotiation";
+		iLog << "MCP with id: " << packetHeader.srcAgentId << " wants to start a negotiation";
 
 		setState(ST_NEGOTIATING);
 		createChildUCC();
@@ -104,7 +104,7 @@ void MCC::OnPacketReceived(TCPSocketPtr socket, const PacketHeader &packetHeader
 		sendPacketToHost(socket->RemoteAddress().GetIPString(), LISTEN_PORT_AGENTS, stream);
 	}
 	else {
-		iLog << "MCC with id: " << packetHeader.srcAgentId << " can't start a negotiation";
+		iLog << "MCP with id: " << packetHeader.srcAgentId << " wants to start a negotiation, but I'm busy";
 		PacketHeader packetHead;
 		packetHead.packetType = PacketType::AwnserMCPNegotiation;
 		packetHead.srcAgentId = id();
